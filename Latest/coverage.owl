@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY spin "http://spinrdf.org/spin#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY basic "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#" >
+    <!ENTITY gf "http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#" >
+    <!ENTITY gm "http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#" >
+    <!ENTITY tm "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#" >
+    <!ENTITY h2o "http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#" >
+    <!ENTITY cv "http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage#" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+     xmlns:gf="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#"
+     xmlns:cv="http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:gm="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:spin="http://spinrdf.org/spin#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage">
+        <dct:created rdf:datatype="&xsd;dateTime">2011-07-26T00:00:00</dct:created>
+        <dct:modified rdf:datatype="&xsd;dateTime">2013-11-14T00:00:00</dct:modified>
+        <dc:description rdf:datatype="&xsd;string">An OWL representation of (parts of) the schema for Coverage Geometry and Functions described in ISO 19123:2005, plus one class defined in ISO 19156:2011 which is recommended to be included in the next revision of ISO 19123</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">An OWL representation of (parts of) the schema for Coverage Geometry and Functions described in ISO 19123:2005, plus one class defined in ISO 19156:2011 which is recommended to be included in the next revision of ISO 19123. 
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/</rdfs:comment>
+        <dc:source rdf:datatype="&xsd;string">ISO 19123</dc:source>
+        <dc:title rdf:datatype="&xsd;string">OWL representation of ISO 19123 (Geographic Information - Coverage schema)</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D Cox
+CSIRO</dc:creator>
+        <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">cv</vann:preferredNamespacePrefix>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature"/>
+        <vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19123/2005/coverage#"/>
+        <dct:hasPart rdf:resource="&cv;ContinuousCoverage"/>
+        <dct:hasPart rdf:resource="&cv;Coverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteCurveCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteGridPointCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscretePointCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteSolidCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteSurfaceCoverage"/>
+        <dct:hasPart rdf:resource="&cv;DiscreteTimeInstantCoverage"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/coverage.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/coverage.rdf"/>
+    </owl:Ontology>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

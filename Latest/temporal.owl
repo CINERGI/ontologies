@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY h2o "http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#" >
+    <!ENTITY tm "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal">
+        <dct:created rdf:datatype="&xsd;dateTime">2011-01-01T00:00:00</dct:created>
+        <skos:historyNote rdf:datatype="&xsd;string">2013-02-19 Converted qualified cardinality restrictions to cardinality/only pairs of restrictions</skos:historyNote>
+        <dct:modified rdf:datatype="&xsd;dateTime">2013-11-13T00:00:00</dct:modified>
+        <dc:description rdf:datatype="&xsd;string">An OWL representation of part of the model for Temporal objects and reference systems from ISO 19108:2002 Geographic Information - Temporal Schema</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">An OWL representation of part of the model for Temporal objects and reference systems from ISO 19108:2002 Geographic Information - Temporal Schema
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/</rdfs:comment>
+        <dc:source rdf:datatype="&xsd;string">ISO 19108:2002</dc:source>
+        <dc:title rdf:datatype="&xsd;string">OWL representation of ISO 19108 (Geographic Information - Temporal Schema)</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX - CSIRO</dc:creator>
+        <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">tm</vann:preferredNamespacePrefix>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"/>
+        <dct:hasPart rdf:resource="&tm;CalDate"/>
+        <dct:hasPart rdf:resource="&tm;Calendar"/>
+        <dct:hasPart rdf:resource="&tm;Clock"/>
+        <dct:hasPart rdf:resource="&tm;ClockTime"/>
+        <dct:hasPart rdf:resource="&tm;Complex"/>
+        <dct:hasPart rdf:resource="&tm;Coordinate"/>
+        <dct:hasPart rdf:resource="&tm;CoordinateSystem"/>
+        <dct:hasPart rdf:resource="&tm;DateAndTime"/>
+        <dct:hasPart rdf:resource="&tm;Edge"/>
+        <dct:hasPart rdf:resource="&tm;GeometricPrimitive"/>
+        <dct:hasPart rdf:resource="&tm;Instant"/>
+        <dct:hasPart rdf:resource="&tm;Node"/>
+        <dct:hasPart rdf:resource="&tm;Object"/>
+        <dct:hasPart rdf:resource="&tm;OrdinalEra"/>
+        <dct:hasPart rdf:resource="&tm;OrdinalPosition"/>
+        <dct:hasPart rdf:resource="&tm;OrdinalReferenceSystem"/>
+        <dct:hasPart rdf:resource="&tm;Period"/>
+        <dct:hasPart rdf:resource="&tm;Primitive"/>
+        <dct:hasPart rdf:resource="&tm;ReferenceSystem"/>
+        <dct:hasPart rdf:resource="&tm;TemporalPosition"/>
+        <dct:hasPart rdf:resource="&tm;TopologicalComplex"/>
+        <dct:hasPart rdf:resource="&tm;TopologicalPrimitive"/>
+        <dct:hasPart rdf:resource="&tm;begin"/>
+        <dct:hasPart rdf:resource="&tm;begunBy"/>
+        <dct:hasPart rdf:resource="&tm;complex"/>
+        <dct:hasPart rdf:resource="&tm;component"/>
+        <dct:hasPart rdf:resource="&tm;date"/>
+        <dct:hasPart rdf:resource="&tm;dateTimePosition"/>
+        <dct:hasPart rdf:resource="&tm;domainOfValidity"/>
+        <dct:hasPart rdf:resource="&tm;end"/>
+        <dct:hasPart rdf:resource="&tm;endedBy"/>
+        <dct:hasPart rdf:resource="&tm;frame"/>
+        <dct:hasPart rdf:resource="&tm;geometry"/>
+        <dct:hasPart rdf:resource="&tm;group"/>
+        <dct:hasPart rdf:resource="&tm;member"/>
+        <dct:hasPart rdf:resource="&tm;name"/>
+        <dct:hasPart rdf:resource="&tm;nextEdge"/>
+        <dct:hasPart rdf:resource="&tm;ordinalValue"/>
+        <dct:hasPart rdf:resource="&tm;previousEdge"/>
+        <dct:hasPart rdf:resource="&tm;primitive"/>
+        <dct:hasPart rdf:resource="&tm;system"/>
+        <dct:hasPart rdf:resource="&tm;temporalPosition"/>
+        <dct:hasPart rdf:resource="&tm;time"/>
+        <dct:hasPart rdf:resource="&tm;topology"/>
+        <dct:hasPart rdf:resource="&tm;value"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/temporal.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/temporal.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="&xsd;time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#begin -->
+
+    <owl:ObjectProperty rdf:about="&tm;begin">
+        <rdfs:label rdf:datatype="&xsd;string">beginning instant or node</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property defines the beginning of a time period</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <owl:inverseOf rdf:resource="&tm;begunBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Edge"/>
+                    <rdf:Description rdf:about="&tm;Period"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Instant"/>
+                    <rdf:Description rdf:about="&tm;Node"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#begunBy -->
+
+    <owl:ObjectProperty rdf:about="&tm;begunBy">
+        <rdfs:label rdf:datatype="&xsd;string">begun by</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Instant"/>
+                    <rdf:Description rdf:about="&tm;Node"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Edge"/>
+                    <rdf:Description rdf:about="&tm;Period"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#complex -->
+
+    <owl:ObjectProperty rdf:about="&tm;complex">
+        <rdfs:label rdf:datatype="&xsd;string">complex</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;Complex"/>
+        <rdfs:domain rdf:resource="&tm;Primitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#component -->
+
+    <owl:ObjectProperty rdf:about="&tm;component">
+        <rdfs:label rdf:datatype="&xsd;string">component era</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;OrdinalEra"/>
+        <rdfs:domain rdf:resource="&tm;OrdinalReferenceSystem"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;hasTopConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#date -->
+
+    <owl:ObjectProperty rdf:about="&tm;date">
+        <rdfs:label rdf:datatype="&xsd;string">calendar date</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;CalDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#domainOfValidity -->
+
+    <owl:ObjectProperty rdf:about="&tm;domainOfValidity">
+        <rdfs:label rdf:datatype="&xsd;string">domain of validity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;ReferenceSystem"/>
+        <rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#Extent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#end -->
+
+    <owl:ObjectProperty rdf:about="&tm;end">
+        <rdfs:label rdf:datatype="&xsd;string">ending instant or node</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property defines the end of a time period</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <owl:inverseOf rdf:resource="&tm;endedBy"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Instant"/>
+                    <rdf:Description rdf:about="&tm;Node"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Edge"/>
+                    <rdf:Description rdf:about="&tm;Period"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#endedBy -->
+
+    <owl:ObjectProperty rdf:about="&tm;endedBy">
+        <rdfs:label rdf:datatype="&xsd;string">ended by</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Edge"/>
+                    <rdf:Description rdf:about="&tm;Period"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&tm;Instant"/>
+                    <rdf:Description rdf:about="&tm;Node"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#frame -->
+
+    <owl:ObjectProperty rdf:about="&tm;frame">
+        <rdfs:label rdf:datatype="&xsd;string">temporal reference system or frame</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property indicates the temporal reference system for a time position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;ReferenceSystem"/>
+        <rdfs:domain rdf:resource="&tm;TemporalPosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#geometry -->
+
+    <owl:ObjectProperty rdf:about="&tm;geometry">
+        <rdfs:label rdf:datatype="&xsd;string">temporal geometry</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;GeometricPrimitive"/>
+        <rdfs:domain rdf:resource="&tm;TopologicalPrimitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#group -->
+
+    <owl:ObjectProperty rdf:about="&tm;group">
+        <rdfs:label rdf:datatype="&xsd;string">parent era</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;OrdinalEra"/>
+        <rdfs:domain rdf:resource="&tm;OrdinalEra"/>
+        <owl:inverseOf rdf:resource="&tm;member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#member -->
+
+    <owl:ObjectProperty rdf:about="&tm;member">
+        <rdfs:label rdf:datatype="&xsd;string">member era</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;OrdinalEra"/>
+        <rdfs:range rdf:resource="&tm;OrdinalEra"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#name -->
+
+    <owl:ObjectProperty rdf:about="&tm;name">
+        <rdfs:label rdf:datatype="&xsd;string">name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#nextEdge -->
+
+    <owl:ObjectProperty rdf:about="&tm;nextEdge">
+        <rdfs:label rdf:datatype="&xsd;string">next edge</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;Edge"/>
+        <rdfs:domain rdf:resource="&tm;Node"/>
+        <rdfs:subPropertyOf rdf:resource="&tm;begunBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#ordinalValue -->
+
+    <owl:ObjectProperty rdf:about="&tm;ordinalValue">
+        <rdfs:label rdf:datatype="&xsd;string">ordinal time position</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;OrdinalEra"/>
+        <rdfs:domain rdf:resource="&tm;OrdinalPosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#previousEdge -->
+
+    <owl:ObjectProperty rdf:about="&tm;previousEdge">
+        <rdfs:label rdf:datatype="&xsd;string">previous edge</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;Edge"/>
+        <rdfs:domain rdf:resource="&tm;Node"/>
+        <rdfs:subPropertyOf rdf:resource="&tm;endedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#primitive -->
+
+    <owl:ObjectProperty rdf:about="&tm;primitive">
+        <rdfs:label rdf:datatype="&xsd;string">primitive member</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;Complex"/>
+        <rdfs:range rdf:resource="&tm;Primitive"/>
+        <owl:inverseOf rdf:resource="&tm;complex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#system -->
+
+    <owl:ObjectProperty rdf:about="&tm;system">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">parent reference system</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;OrdinalEra"/>
+        <rdfs:range rdf:resource="&tm;OrdinalReferenceSystem"/>
+        <owl:inverseOf rdf:resource="&tm;component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#temporalPosition -->
+
+    <owl:ObjectProperty rdf:about="&tm;temporalPosition">
+        <rdfs:label rdf:datatype="&xsd;string">temporal position</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;TemporalPosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#time -->
+
+    <owl:ObjectProperty rdf:about="&tm;time">
+        <rdfs:label rdf:datatype="&xsd;string">clock time</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:range rdf:resource="&tm;ClockTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#topology -->
+
+    <owl:ObjectProperty rdf:about="&tm;topology">
+        <rdfs:label rdf:datatype="&xsd;string">temporal topology</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;GeometricPrimitive"/>
+        <rdfs:range rdf:resource="&tm;TopologicalPrimitive"/>
+        <owl:inverseOf rdf:resource="&tm;geometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#dateTimePosition -->
+
+    <owl:DatatypeProperty rdf:about="&tm;dateTimePosition">
+        <rdfs:label rdf:datatype="&xsd;string">date or dateTime position</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property is a time encoded as an xsd:dateTime</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;Instant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Date"/>
+                    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#DateTime"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#value -->
+
+    <owl:DatatypeProperty rdf:about="&tm;value">
+        <rdfs:label rdf:datatype="&xsd;string">temporal position value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <rdfs:domain rdf:resource="&tm;TemporalPosition"/>
+        <rdfs:subPropertyOf rdf:resource="&rdf;value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#CalDate -->
+
+    <owl:Class rdf:about="&tm;CalDate">
+        <rdfs:label rdf:datatype="&xsd;string">Calendar date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TemporalPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;frame"/>
+                <owl:allValuesFrom rdf:resource="&tm;Calendar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;value"/>
+                <owl:allValuesFrom rdf:resource="&xsd;date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_CalDate</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Calendar -->
+
+    <owl:Class rdf:about="&tm;Calendar">
+        <rdfs:label rdf:datatype="&xsd;string">Calendar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;ReferenceSystem"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Calendar</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Clock -->
+
+    <owl:Class rdf:about="&tm;Clock">
+        <rdfs:label rdf:datatype="&xsd;string">Clock</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;ReferenceSystem"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Clock</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#ClockTime -->
+
+    <owl:Class rdf:about="&tm;ClockTime">
+        <rdfs:label rdf:datatype="&xsd;string">Clock time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TemporalPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;value"/>
+                <owl:allValuesFrom rdf:resource="&xsd;time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;frame"/>
+                <owl:allValuesFrom rdf:resource="&tm;Clock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_ClockTime</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Complex -->
+
+    <owl:Class rdf:about="&tm;Complex">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;primitive"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Complex</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate -->
+
+    <owl:Class rdf:about="&tm;Coordinate">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Coordinate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TemporalPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;frame"/>
+                <owl:allValuesFrom rdf:resource="&tm;CoordinateSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Coordinate</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#CoordinateSystem -->
+
+    <owl:Class rdf:about="&tm;CoordinateSystem">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Coordinate System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;ReferenceSystem"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_CoordinateSystem</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Edge -->
+
+    <owl:Class rdf:about="&tm;Edge">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Edge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TopologicalPrimitive"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;geometry"/>
+                <owl:allValuesFrom rdf:resource="&tm;Period"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;begin"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;end"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;end"/>
+                <owl:allValuesFrom rdf:resource="&tm;Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;geometry"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;begin"/>
+                <owl:allValuesFrom rdf:resource="&tm;Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Edge</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#GeometricComplex -->
+
+    <owl:Class rdf:about="&tm;GeometricComplex">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal geometric complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Complex"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;primitive"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;primitive"/>
+                <owl:allValuesFrom rdf:resource="&tm;GeometricPrimitive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_GeometricComplex</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#GeometricPrimitive -->
+
+    <owl:Class rdf:about="&tm;GeometricPrimitive">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Geometric Primitive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Primitive"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_GeometricPrimitive</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Instant -->
+
+    <owl:Class rdf:about="&tm;Instant">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Instant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;GeometricPrimitive"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&tm;temporalPosition"/>
+                        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&tm;dateTimePosition"/>
+                        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;begunBy"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;topology"/>
+                <owl:allValuesFrom rdf:resource="&tm;Node"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;endedBy"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;topology"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Instant</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Node -->
+
+    <owl:Class rdf:about="&tm;Node">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Node</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TopologicalPrimitive"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;geometry"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;geometry"/>
+                <owl:allValuesFrom rdf:resource="&tm;Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;previousEdge"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;nextEdge"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Node</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Object -->
+
+    <owl:Class rdf:about="&tm;Object">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Object</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#OrdinalEra -->
+
+    <owl:Class rdf:about="&tm;OrdinalEra">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal ordinal era</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;group"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_OrdinalEra</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#OrdinalPosition -->
+
+    <owl:Class rdf:about="&tm;OrdinalPosition">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal ordinal position</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;TemporalPosition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;ordinalValue"/>
+                <owl:allValuesFrom rdf:resource="&tm;OrdinalEra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;frame"/>
+                <owl:allValuesFrom rdf:resource="&tm;OrdinalReferenceSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_OrdinalPosition</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#OrdinalReferenceSystem -->
+
+    <owl:Class rdf:about="&tm;OrdinalReferenceSystem">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Ordinal Reference System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;ReferenceSystem"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_OrdinalReferenceSystem</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Period -->
+
+    <owl:Class rdf:about="&tm;Period">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Period</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;GeometricPrimitive"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;begin"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;topology"/>
+                <owl:allValuesFrom rdf:resource="&tm;Edge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;begin"/>
+                <owl:allValuesFrom rdf:resource="&tm;Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;topology"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;end"/>
+                <owl:allValuesFrom rdf:resource="&tm;Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;end"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Period</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Primitive -->
+
+    <owl:Class rdf:about="&tm;Primitive">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Primitive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Object"/>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_Primitive</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#ReferenceSystem -->
+
+    <owl:Class rdf:about="&tm;ReferenceSystem">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Reference System</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;domainOfValidity"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;domainOfValidity"/>
+                <owl:allValuesFrom rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#Extent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;name"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_ReferenceSystem</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#TemporalPosition -->
+
+    <owl:Class rdf:about="&tm;TemporalPosition">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal position</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;frame"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&tm;ordinalValue"/>
+                        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&tm;value"/>
+                        <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_TemporalPosition</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#TopologicalComplex -->
+
+    <owl:Class rdf:about="&tm;TopologicalComplex">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal topologic complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Complex"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;primitive"/>
+                <owl:allValuesFrom rdf:resource="&tm;TopologicalPrimitive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;primitive"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_TopologicalComplex</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#TopologicalPrimitive -->
+
+    <owl:Class rdf:about="&tm;TopologicalPrimitive">
+        <rdfs:label rdf:datatype="&xsd;string">Temporal Topological Primitive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&tm;Primitive"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;complex"/>
+                <owl:allValuesFrom rdf:resource="&tm;TopologicalComplex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tm;complex"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">TM_TopologicalPrimitive</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

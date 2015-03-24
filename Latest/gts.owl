@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY gts "http://resource.geosciml.org/ontology/timescale/gts#" >
+    <!ENTITY rank "http://resource.geosciml.org/ontology/timescale/rank/" >
+    <!ENTITY thors "http://resource.geosciml.org/ontology/timescale/thors#" >
+    <!ENTITY tm "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#" >
+    <!ENTITY sam "http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#" >
+]>
+
+
+<rdf:RDF xmlns="http://resource.geosciml.org/ontology/timescale/gts#"
+     xml:base="http://resource.geosciml.org/ontology/timescale/gts"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xmlns:thors="http://resource.geosciml.org/ontology/timescale/thors#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:gts="http://resource.geosciml.org/ontology/timescale/gts#"
+     xmlns:sam="http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rank="http://resource.geosciml.org/ontology/timescale/rank/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://resource.geosciml.org/ontology/timescale/gts">
+        <dct:created rdf:datatype="&xsd;date">2011-01-01</dct:created>
+        <dct:modified rdf:datatype="&xsd;date">2013-11-14</dct:modified>
+        <dc:rights rdf:datatype="&xsd;string">Copyright © 2012-2013 CSIRO, AzGS</dc:rights>
+        <dc:source rdf:datatype="&xsd;string">Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:source>
+        <dc:title rdf:datatype="&xsd;string">Geologic Timescale model</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX</dc:creator>
+        <dc:contributor rdf:datatype="&xsd;string">Stephen M RICHARD</dc:contributor>
+        <dc:description rdf:datatype="&xsd;string">This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:description>
+        <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">gts</vann:preferredNamespacePrefix>
+        <rdfs:seeAlso rdf:resource="doi:10.1130/GES00022.1"/>
+        <rdfs:seeAlso rdf:resource="http://www.geosciml.org"/>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+        <dct:hasPart rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling"/>
+        <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.1130/GES00022.1"/>
+        <rdfs:seeAlso rdf:resource="http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1"/>
+        <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/rank"/>
+        <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/thors"/>
+        <vann:preferredNamespaceUri rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#"/>
+        <dct:hasPart rdf:resource="&gts;EraCode"/>
+        <dct:hasPart rdf:resource="&gts;GeochronologicBoundary"/>
+        <dct:hasPart rdf:resource="&gts;GeochronologicEra"/>
+        <dct:hasPart rdf:resource="&gts;GeochronologicEraRank"/>
+        <dct:hasPart rdf:resource="&gts;GeologicTimescale"/>
+        <dct:hasPart rdf:resource="&gts;NumericEraBoundary"/>
+        <dct:hasPart rdf:resource="&gts;StratigraphicEvent"/>
+        <dct:hasPart rdf:resource="&gts;StratigraphicPoint"/>
+        <dct:hasPart rdf:resource="&gts;StratigraphicSection"/>
+        <dct:hasPart rdf:resource="&gts;boundary"/>
+        <dct:hasPart rdf:resource="&gts;boundaryLevel"/>
+        <dct:hasPart rdf:resource="&gts;correlatesWith"/>
+        <dct:hasPart rdf:resource="&gts;correlationEvent"/>
+        <dct:hasPart rdf:resource="&gts;era"/>
+        <dct:hasPart rdf:resource="&gts;event"/>
+        <dct:hasPart rdf:resource="&gts;geologicDescription"/>
+        <dct:hasPart rdf:resource="&gts;geologicSetting"/>
+        <dct:hasPart rdf:resource="&gts;manifestedBy"/>
+        <dct:hasPart rdf:resource="&gts;rank"/>
+        <dct:hasPart rdf:resource="&gts;ratifiedGSSP"/>
+        <dct:hasPart rdf:resource="&gts;status"/>
+        <dct:hasPart rdf:resource="&gts;stratotype"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/Geoscience/GeologicTimeScale/gts-30.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+    <rdfs:Datatype rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#EraCode -->
+
+    <rdfs:Datatype rdf:about="&gts;EraCode">
+        <rdfs:label rdf:datatype="&xsd;string">Era code</rdfs:label>
+        <owl:equivalentClass rdf:resource="http://org.semanticweb.owlapi/error#Error4"/>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#boundary -->
+
+    <owl:ObjectProperty rdf:about="&gts;boundary">
+        <rdfs:label rdf:datatype="&xsd;string">geochronologic boundary</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">geochronologic boundary corresponding with this point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#correlatesWith -->
+
+    <owl:ObjectProperty rdf:about="&gts;correlatesWith">
+        <rdfs:label rdf:datatype="&xsd;string">correlating boundary or era</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This property points from a geologic feature or event to a geochronologic element</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#era -->
+
+    <owl:ObjectProperty rdf:about="&gts;era">
+        <rdfs:label rdf:datatype="&xsd;string">geochronologic era</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">geochronologic era corresponding with this section</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#event -->
+
+    <owl:ObjectProperty rdf:about="&gts;event">
+        <rdfs:label rdf:datatype="&xsd;string">stratigraphic event</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">stratigraphic event corresponding with this boundary or point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+        <rdfs:range rdf:resource="&gts;StratigraphicEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#manifestedBy -->
+
+    <owl:ObjectProperty rdf:about="&gts;manifestedBy">
+        <rdfs:label rdf:datatype="&xsd;string">geologic manifestation</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">This property points from a geochronologic element to a geologic feature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+        <owl:inverseOf rdf:resource="&gts;correlatesWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#rank -->
+
+    <owl:ObjectProperty rdf:about="&gts;rank">
+        <rdfs:label rdf:datatype="&xsd;string">era rank</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The term &apos;era&apos; in this context is generic. Geochronologic elements of all ranks are included, so the rank is given as a separate property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#stratotype -->
+
+    <owl:ObjectProperty rdf:about="&gts;stratotype">
+        <rdfs:label rdf:datatype="&xsd;string">stratotype</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">the characteristic point or section corresponding with a geochronologic concept</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel -->
+
+    <owl:DatatypeProperty rdf:about="&gts;boundaryLevel">
+        <rdfs:label rdf:datatype="&xsd;string">boundary level</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">the level within the section of the point characterizing the boundary</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#correlationEvent -->
+
+    <owl:DatatypeProperty rdf:about="&gts;correlationEvent">
+        <rdfs:label rdf:datatype="&xsd;string">correlation event</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">the stratigraphic event that is intended to be represented by this stratigraphic point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#geologicDescription -->
+
+    <owl:DatatypeProperty rdf:about="&gts;geologicDescription">
+        <rdfs:label>geologic description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#geologicSetting -->
+
+    <owl:DatatypeProperty rdf:about="&gts;geologicSetting">
+        <rdfs:label>geologic setting</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP -->
+
+    <owl:DatatypeProperty rdf:about="&gts;ratifiedGSSP">
+        <rdfs:label rdf:datatype="&xsd;string">ratified</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">&apos;true&apos; if ratified by ICS</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#status -->
+
+    <owl:DatatypeProperty rdf:about="&gts;status">
+        <rdfs:label rdf:datatype="&xsd;string">status</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">formal ICS status of this boundary and point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts#StratigraphicEvent -->
+
+    <owl:Class rdf:about="&gts;StratigraphicEvent">
+        <rdfs:label xml:lang="en">Stratigraphic Event</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A subclass of Geologic Event (placeholder) </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/ontology/timescale/gts -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/ontology/timescale/gts"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#Medium.name">
+        <rdfs:label>Medium.name</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

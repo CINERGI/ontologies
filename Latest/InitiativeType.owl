@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ds "http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#" >
+    <!ENTITY init "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:init="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:ds="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/InitiativeType.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/InitiativeType.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/ -->
+
+    <owl:NamedIndividual rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/">
+        <rdfs:label rdf:datatype="&xsd;string">initiative type codes</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">initiative type codes</skos:prefLabel>
+        <skos:member rdf:resource="&init;campaign"/>
+        <skos:member rdf:resource="&init;collection"/>
+        <skos:member rdf:resource="&init;exercise"/>
+        <skos:member rdf:resource="&init;experiment"/>
+        <skos:member rdf:resource="&init;investigation"/>
+        <skos:member rdf:resource="&init;mission"/>
+        <skos:member rdf:resource="&init;operation"/>
+        <skos:member rdf:resource="&init;platform"/>
+        <skos:member rdf:resource="&init;process"/>
+        <skos:member rdf:resource="&init;program"/>
+        <skos:member rdf:resource="&init;project"/>
+        <skos:member rdf:resource="&init;sensor"/>
+        <skos:member rdf:resource="&init;study"/>
+        <skos:member rdf:resource="&init;task"/>
+        <skos:member rdf:resource="&init;trial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/scheme -->
+
+    <owl:NamedIndividual rdf:about="&init;scheme">
+        <rdfs:label rdf:datatype="&xsd;string">Initiative type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&init;investigation">
+        <rdfs:label rdf:datatype="&xsd;string">investigation</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">investigation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;study">
+        <rdfs:label rdf:datatype="&xsd;string">study</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">study</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;platform">
+        <rdfs:label rdf:datatype="&xsd;string">platform</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">platform</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;trial">
+        <rdfs:label rdf:datatype="&xsd;string">trial</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">trial</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;experiment">
+        <rdfs:label rdf:datatype="&xsd;string">experiment</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">experiment</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;mission">
+        <rdfs:label rdf:datatype="&xsd;string">mission</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">mission</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;campaign">
+        <rdfs:label rdf:datatype="&xsd;string">campaign</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">campaign</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;program">
+        <rdfs:label rdf:datatype="&xsd;string">program</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">program</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;task">
+        <rdfs:label rdf:datatype="&xsd;string">task</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">task</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;project">
+        <rdfs:label rdf:datatype="&xsd;string">project</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">project</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;exercise">
+        <rdfs:label rdf:datatype="&xsd;string">exercise</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">exercise</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;operation">
+        <rdfs:label rdf:datatype="&xsd;string">operation</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">operation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;process">
+        <rdfs:label rdf:datatype="&xsd;string">process</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">process</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;sensor">
+        <rdfs:label rdf:datatype="&xsd;string">sensor</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">sensor</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&init;collection">
+        <rdfs:label rdf:datatype="&xsd;string">collection</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">collection</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <skos:inScheme rdf:resource="&init;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

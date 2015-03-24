@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY condition "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:condition="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/ImagingCondition.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/ImagingCondition.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/ -->
+
+    <owl:NamedIndividual rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/">
+        <rdfs:label rdf:datatype="&xsd;string">imaging condition codes</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">imaging condition codes</skos:prefLabel>
+        <skos:member rdf:resource="&condition;blurredImage"/>
+        <skos:member rdf:resource="&condition;cloud"/>
+        <skos:member rdf:resource="&condition;degradingObliquity"/>
+        <skos:member rdf:resource="&condition;fog"/>
+        <skos:member rdf:resource="&condition;heavySmokeOrDust"/>
+        <skos:member rdf:resource="&condition;night"/>
+        <skos:member rdf:resource="&condition;rain"/>
+        <skos:member rdf:resource="&condition;semiDarkness"/>
+        <skos:member rdf:resource="&condition;shadow"/>
+        <skos:member rdf:resource="&condition;snow"/>
+        <skos:member rdf:resource="&condition;terrainMasking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/scheme -->
+
+    <owl:NamedIndividual rdf:about="&condition;scheme">
+        <rdfs:label rdf:datatype="&xsd;string">Imaging condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&condition;heavySmokeOrDust">
+        <rdfs:label rdf:datatype="&xsd;string">heavy smoke or dust</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">heavy smoke or dust</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;degradingObliquity">
+        <rdfs:label rdf:datatype="&xsd;string">degrading obliquity</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">degrading obliquity</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;rain">
+        <rdfs:label rdf:datatype="&xsd;string">rain</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">rain</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;fog">
+        <rdfs:label rdf:datatype="&xsd;string">fog</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">fog</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;cloud">
+        <rdfs:label rdf:datatype="&xsd;string">cloud</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">cloud</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;snow">
+        <rdfs:label rdf:datatype="&xsd;string">snow</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">snow</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;semiDarkness">
+        <rdfs:label rdf:datatype="&xsd;string">semi darkness</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">semi darkness</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;blurredImage">
+        <rdfs:label rdf:datatype="&xsd;string">blurred image</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">blurred image</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;night">
+        <rdfs:label rdf:datatype="&xsd;string">night</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">night</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;terrainMasking">
+        <rdfs:label rdf:datatype="&xsd;string">terrain masking</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">terrain masking</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&condition;shadow">
+        <rdfs:label rdf:datatype="&xsd;string">shadow</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">shadow</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&condition;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY topic "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory"
+     xmlns:topic="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/TopicCategory.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/TopicCategory.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&topic;economy">
+        <rdfs:label rdf:datatype="&xsd;string">economy</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">economy</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;planningCadastre">
+        <rdfs:label rdf:datatype="&xsd;string">planning cadastre</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">planning cadastre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;imageryBaseMapsEarthCover">
+        <rdfs:label rdf:datatype="&xsd;string">imagery base maps earth cover</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">imagery base maps earth cover</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;intelligenceMilitary">
+        <rdfs:label rdf:datatype="&xsd;string">intelligence military</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">intelligence military</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;oceans">
+        <rdfs:label rdf:datatype="&xsd;string">oceans</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">oceans</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;society">
+        <rdfs:label rdf:datatype="&xsd;string">society</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">society</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;utilitiesCommunication">
+        <rdfs:label rdf:datatype="&xsd;string">utilities communication</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">utilities communication</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;geoscientificInformation">
+        <rdfs:label rdf:datatype="&xsd;string">geoscientific information</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">geoscientific information</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;environment">
+        <rdfs:label rdf:datatype="&xsd;string">environment</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">environment</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;climatologyMeteorologyAtmosphere">
+        <rdfs:label rdf:datatype="&xsd;string">climatology meteorology atmosphere</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">climatology meteorology atmosphere</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;elevation">
+        <rdfs:label rdf:datatype="&xsd;string">elevation</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">elevation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;boundaries">
+        <rdfs:label rdf:datatype="&xsd;string">boundaries</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">boundaries</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;transportation">
+        <rdfs:label rdf:datatype="&xsd;string">transportation</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">transportation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;health">
+        <rdfs:label rdf:datatype="&xsd;string">health</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">health</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;inlandWaters">
+        <rdfs:label rdf:datatype="&xsd;string">inland waters</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">inland waters</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;farming">
+        <rdfs:label rdf:datatype="&xsd;string">farming</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">farming</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;structure">
+        <rdfs:label rdf:datatype="&xsd;string">structure</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">structure</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;biota">
+        <rdfs:label rdf:datatype="&xsd;string">biota</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">biota</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&topic;location">
+        <rdfs:label rdf:datatype="&xsd;string">location</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">location</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&topic;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY restrict "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:restrict="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Classification"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/Restriction.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/Restriction.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&restrict;trademark">
+        <rdfs:label rdf:datatype="&xsd;string">trademark</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">trademark</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;license">
+        <rdfs:label rdf:datatype="&xsd;string">license</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">license</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;intellectualPropertyRights">
+        <rdfs:label rdf:datatype="&xsd;string">intellectual property rights</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">intellectual property rights</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;patent">
+        <rdfs:label rdf:datatype="&xsd;string">patent</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">patent</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;copyright">
+        <rdfs:label rdf:datatype="&xsd;string">copyright</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">copyright</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;otherRestrictions">
+        <rdfs:label rdf:datatype="&xsd;string">other restrictions</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">other restrictions</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&restrict;patentPending">
+        <rdfs:label rdf:datatype="&xsd;string">patent pending</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">patent pending</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&restrict;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

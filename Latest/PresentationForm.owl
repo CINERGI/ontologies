@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ci "http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" >
+    <!ENTITY present "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:present="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm">
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/PresentationForm.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/PresentationForm.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&present;tableHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">table hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;profileDigital">
+        <rdfs:label rdf:datatype="&xsd;string">profile digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;modelDigital">
+        <rdfs:label rdf:datatype="&xsd;string">model digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;tableDigital">
+        <rdfs:label rdf:datatype="&xsd;string">table digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;videoHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">video hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;mapHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">map hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;imageDigital">
+        <rdfs:label rdf:datatype="&xsd;string">image digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;documentHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">document hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;documentDigital">
+        <rdfs:label rdf:datatype="&xsd;string">document digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;imageHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">image hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;mapDigital">
+        <rdfs:label rdf:datatype="&xsd;string">map digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;modelHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">model hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;videoDigital">
+        <rdfs:label rdf:datatype="&xsd;string">video digital</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&present;profileHardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">profile hardcopy</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&present;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

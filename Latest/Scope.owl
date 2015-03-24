@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY scope "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:scope="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/Scope.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/Scope.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&scope;service">
+        <rdfs:label rdf:datatype="&xsd;string">service</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">service</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;attribute">
+        <rdfs:label rdf:datatype="&xsd;string">attribute</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">attribute</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;software">
+        <rdfs:label rdf:datatype="&xsd;string">software</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">software</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;fieldSession">
+        <rdfs:label rdf:datatype="&xsd;string">field session</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">field session</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;tile">
+        <rdfs:label rdf:datatype="&xsd;string">tile</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">tile</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;nonGeographicDataset">
+        <rdfs:label rdf:datatype="&xsd;string">non geographic dataset</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">non geographic dataset</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;model">
+        <rdfs:label rdf:datatype="&xsd;string">model</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">model</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;propertyType">
+        <rdfs:label rdf:datatype="&xsd;string">property-Type</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">property-Type</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;series">
+        <rdfs:label rdf:datatype="&xsd;string">series</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">series</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;dataset">
+        <rdfs:label rdf:datatype="&xsd;string">dataset</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">dataset</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;attributeType">
+        <rdfs:label rdf:datatype="&xsd;string">attribute type</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">attribute type</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;collectionSession">
+        <rdfs:label rdf:datatype="&xsd;string">collection session</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">collection session</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;dimensionGroup">
+        <rdfs:label rdf:datatype="&xsd;string">dimension group</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">dimension group</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;collectionHardware">
+        <rdfs:label rdf:datatype="&xsd;string">collection hardware</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">collection hardware</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;featureType">
+        <rdfs:label rdf:datatype="&xsd;string">feature type</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">feature type</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&scope;feature">
+        <rdfs:label rdf:datatype="&xsd;string">feature</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">feature</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&scope;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

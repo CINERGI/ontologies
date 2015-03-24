@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY basic "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#" >
+    <!ENTITY ci "http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" >
+    <!ENTITY h2o "http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#" >
+    <!ENTITY role "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/" >
+    <!ENTITY datetype "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/" >
+    <!ENTITY online "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/OnLineFunction/" >
+    <!ENTITY present "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+     xmlns:online="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/OnLineFunction/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:present="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+     xmlns:role="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:datetype="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation">
+        <dcterms:created rdf:datatype="&xsd;dateTime">2012-05-18T00:00:00</dcterms:created>
+        <dc:date rdf:datatype="&xsd;dateTime">2012-05-25T00:00:00</dc:date>
+        <dcterms:modified rdf:datatype="&xsd;dateTime">2012-10-26T00:00:00</dcterms:modified>
+        <dc:description rdf:datatype="&xsd;string">An OWL representation of parts of the Geographic Metadata model described in ISO 19115:2003 with Corrigendum 2006 - CI Package</dc:description>
+        <dc:source rdf:datatype="&xsd;string">ISO 19115:2003
+ISO 19115:2006 Corrigendum</dc:source>
+        <dc:title rdf:datatype="&xsd;string">OWL representation of ISO 19115 (Geographic Information - Metadata - Citation package)</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">Simon Jonathan David COX
+CSIRO</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">This version of the ontology uses # and /code/ patterns as agreed in ISO 19150-2 meeting in Toulouse, June 2012.</rdfs:comment>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <dcterms:hasPart rdf:resource="&ci;Address"/>
+        <dcterms:hasPart rdf:resource="&ci;Citation"/>
+        <dcterms:hasPart rdf:resource="&ci;Contact"/>
+        <dcterms:hasPart rdf:resource="&ci;Date"/>
+        <dcterms:hasPart rdf:resource="&ci;Date.date"/>
+        <dcterms:hasPart rdf:resource="&ci;DateTypeCode"/>
+        <dcterms:hasPart rdf:resource="&ci;ISBN"/>
+        <dcterms:hasPart rdf:resource="&ci;ISSN"/>
+        <dcterms:hasPart rdf:resource="&ci;OnLineFunctionCode"/>
+        <dcterms:hasPart rdf:resource="&ci;OnlineResource"/>
+        <dcterms:hasPart rdf:resource="&ci;PresentationFormCode"/>
+        <dcterms:hasPart rdf:resource="&ci;ResponsibleParty"/>
+        <dcterms:hasPart rdf:resource="&ci;RoleCode"/>
+        <dcterms:hasPart rdf:resource="&ci;Series"/>
+        <dcterms:hasPart rdf:resource="&ci;Telephone"/>
+        <dcterms:hasPart rdf:resource="&ci;address"/>
+        <dcterms:hasPart rdf:resource="&ci;administrativeArea"/>
+        <dcterms:hasPart rdf:resource="&ci;alternateTitle"/>
+        <dcterms:hasPart rdf:resource="&ci;applicationProfile"/>
+        <dcterms:hasPart rdf:resource="&ci;citedResponsibleParty"/>
+        <dcterms:hasPart rdf:resource="&ci;city"/>
+        <dcterms:hasPart rdf:resource="&ci;collectiveTitle"/>
+        <dcterms:hasPart rdf:resource="&ci;contactInfo"/>
+        <dcterms:hasPart rdf:resource="&ci;contactInstructions"/>
+        <dcterms:hasPart rdf:resource="&ci;country"/>
+        <dcterms:hasPart rdf:resource="&ci;date"/>
+        <dcterms:hasPart rdf:resource="&ci;dateType"/>
+        <dcterms:hasPart rdf:resource="&ci;deliveryPoint"/>
+        <dcterms:hasPart rdf:resource="&ci;description"/>
+        <dcterms:hasPart rdf:resource="&ci;edition"/>
+        <dcterms:hasPart rdf:resource="&ci;editionDate"/>
+        <dcterms:hasPart rdf:resource="&ci;electronicMailAddress"/>
+        <dcterms:hasPart rdf:resource="&ci;facsimile"/>
+        <dcterms:hasPart rdf:resource="&ci;function"/>
+        <dcterms:hasPart rdf:resource="&ci;hoursOfService"/>
+        <dcterms:hasPart rdf:resource="&ci;identifier"/>
+        <dcterms:hasPart rdf:resource="&ci;individualName"/>
+        <dcterms:hasPart rdf:resource="&ci;issueIdentification"/>
+        <dcterms:hasPart rdf:resource="&ci;linkage"/>
+        <dcterms:hasPart rdf:resource="&ci;name"/>
+        <dcterms:hasPart rdf:resource="&ci;onlineResource"/>
+        <dcterms:hasPart rdf:resource="&ci;organisationName"/>
+        <dcterms:hasPart rdf:resource="&ci;otherCitationDetails"/>
+        <dcterms:hasPart rdf:resource="&ci;page"/>
+        <dcterms:hasPart rdf:resource="&ci;phone"/>
+        <dcterms:hasPart rdf:resource="&ci;positionName"/>
+        <dcterms:hasPart rdf:resource="&ci;postalCode"/>
+        <dcterms:hasPart rdf:resource="&ci;presentationForm"/>
+        <dcterms:hasPart rdf:resource="&ci;protocol"/>
+        <dcterms:hasPart rdf:resource="&ci;role"/>
+        <dcterms:hasPart rdf:resource="&ci;series"/>
+        <dcterms:hasPart rdf:resource="&ci;title"/>
+        <dcterms:hasPart rdf:resource="&ci;voice"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/OnLineFunction"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/citation.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/citation.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#address -->
+
+    <owl:ObjectProperty rdf:about="&ci;address">
+        <rdfs:label rdf:datatype="&xsd;string">address</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#citedResponsibleParty -->
+
+    <owl:ObjectProperty rdf:about="&ci;citedResponsibleParty">
+        <rdfs:label rdf:datatype="&xsd;string">cited responsible party</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#contactInfo -->
+
+    <owl:ObjectProperty rdf:about="&ci;contactInfo">
+        <rdfs:label rdf:datatype="&xsd;string">contact info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#date -->
+
+    <owl:ObjectProperty rdf:about="&ci;date">
+        <rdfs:label rdf:datatype="&xsd;string">date</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#dateType -->
+
+    <owl:ObjectProperty rdf:about="&ci;dateType">
+        <rdfs:label rdf:datatype="&xsd;string">date type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#function -->
+
+    <owl:ObjectProperty rdf:about="&ci;function">
+        <rdfs:label rdf:datatype="&xsd;string">function</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#identifier -->
+
+    <owl:ObjectProperty rdf:about="&ci;identifier">
+        <rdfs:label rdf:datatype="&xsd;string">identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#linkage -->
+
+    <owl:ObjectProperty rdf:about="&ci;linkage">
+        <rdfs:label rdf:datatype="&xsd;string">linkage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#onlineResource -->
+
+    <owl:ObjectProperty rdf:about="&ci;onlineResource">
+        <rdfs:label rdf:datatype="&xsd;string">online resource</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#phone -->
+
+    <owl:ObjectProperty rdf:about="&ci;phone">
+        <rdfs:label rdf:datatype="&xsd;string">phone</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#presentationForm -->
+
+    <owl:ObjectProperty rdf:about="&ci;presentationForm">
+        <rdfs:label rdf:datatype="&xsd;string">presentation form</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#role -->
+
+    <owl:ObjectProperty rdf:about="&ci;role">
+        <rdfs:label rdf:datatype="&xsd;string">role</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#series -->
+
+    <owl:ObjectProperty rdf:about="&ci;series">
+        <rdfs:label rdf:datatype="&xsd;string">series</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#Date.date -->
+
+    <owl:DatatypeProperty rdf:about="&ci;Date.date">
+        <rdfs:label rdf:datatype="&xsd;string">Date.date</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#ISBN -->
+
+    <owl:DatatypeProperty rdf:about="&ci;ISBN">
+        <rdfs:label rdf:datatype="&xsd;string">ISBN</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#ISSN -->
+
+    <owl:DatatypeProperty rdf:about="&ci;ISSN">
+        <rdfs:label rdf:datatype="&xsd;string">ISSN</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#administrativeArea -->
+
+    <owl:DatatypeProperty rdf:about="&ci;administrativeArea">
+        <rdfs:label rdf:datatype="&xsd;string">administrative area</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#alternateTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ci;alternateTitle">
+        <rdfs:label rdf:datatype="&xsd;string">alternate title</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#applicationProfile -->
+
+    <owl:DatatypeProperty rdf:about="&ci;applicationProfile">
+        <rdfs:label rdf:datatype="&xsd;string">application profile</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#city -->
+
+    <owl:DatatypeProperty rdf:about="&ci;city">
+        <rdfs:label rdf:datatype="&xsd;string">city</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#collectiveTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ci;collectiveTitle">
+        <rdfs:label rdf:datatype="&xsd;string">collective title</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#contactInstructions -->
+
+    <owl:DatatypeProperty rdf:about="&ci;contactInstructions">
+        <rdfs:label rdf:datatype="&xsd;string">contact instructions</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#country -->
+
+    <owl:DatatypeProperty rdf:about="&ci;country">
+        <rdfs:label rdf:datatype="&xsd;string">country</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#deliveryPoint -->
+
+    <owl:DatatypeProperty rdf:about="&ci;deliveryPoint">
+        <rdfs:label rdf:datatype="&xsd;string">delivery point</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#description -->
+
+    <owl:DatatypeProperty rdf:about="&ci;description">
+        <rdfs:label rdf:datatype="&xsd;string">description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#edition -->
+
+    <owl:DatatypeProperty rdf:about="&ci;edition">
+        <rdfs:label rdf:datatype="&xsd;string">edition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#editionDate -->
+
+    <owl:DatatypeProperty rdf:about="&ci;editionDate">
+        <rdfs:label rdf:datatype="&xsd;string">edition date</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#electronicMailAddress -->
+
+    <owl:DatatypeProperty rdf:about="&ci;electronicMailAddress">
+        <rdfs:label rdf:datatype="&xsd;string">electronic mail address</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#facsimile -->
+
+    <owl:DatatypeProperty rdf:about="&ci;facsimile">
+        <rdfs:label rdf:datatype="&xsd;string">facsimile</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#hoursOfService -->
+
+    <owl:DatatypeProperty rdf:about="&ci;hoursOfService">
+        <rdfs:label rdf:datatype="&xsd;string">hours of service</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#individualName -->
+
+    <owl:DatatypeProperty rdf:about="&ci;individualName">
+        <rdfs:label rdf:datatype="&xsd;string">individual name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#issueIdentification -->
+
+    <owl:DatatypeProperty rdf:about="&ci;issueIdentification">
+        <rdfs:label rdf:datatype="&xsd;string">issue identification</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#name -->
+
+    <owl:DatatypeProperty rdf:about="&ci;name">
+        <rdfs:label rdf:datatype="&xsd;string">name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#organisationName -->
+
+    <owl:DatatypeProperty rdf:about="&ci;organisationName">
+        <rdfs:label rdf:datatype="&xsd;string">organisation name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#otherCitationDetails -->
+
+    <owl:DatatypeProperty rdf:about="&ci;otherCitationDetails">
+        <rdfs:label rdf:datatype="&xsd;string">other citation details</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#page -->
+
+    <owl:DatatypeProperty rdf:about="&ci;page">
+        <rdfs:label rdf:datatype="&xsd;string">page</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#positionName -->
+
+    <owl:DatatypeProperty rdf:about="&ci;positionName">
+        <rdfs:label rdf:datatype="&xsd;string">position name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="&ci;postalCode">
+        <rdfs:label rdf:datatype="&xsd;string">postal code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#protocol -->
+
+    <owl:DatatypeProperty rdf:about="&ci;protocol">
+        <rdfs:label rdf:datatype="&xsd;string">protocol</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#title -->
+
+    <owl:DatatypeProperty rdf:about="&ci;title">
+        <rdfs:label rdf:datatype="&xsd;string">title</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#voice -->
+
+    <owl:DatatypeProperty rdf:about="&ci;voice">
+        <rdfs:label rdf:datatype="&xsd;string">voice</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

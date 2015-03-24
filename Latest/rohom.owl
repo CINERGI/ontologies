@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;ro/rohom.owl#"
+     xml:base="&obo;ro/rohom.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;ro/rohom.owl">
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="&xsd;string">1.2</oboInOwl:hasOBOFormatVersion>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBOFormatVersion">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000000 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000000">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in similarity relationship with</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ECO:0000041</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Relation between biological objects that resemble or are related to each other sufficiently to warrant a comparison.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SO:similar_to</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">correspondence</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">resemblance</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sameness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">similar to</oboInOwl:hasExactSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000000"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">correspondence</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1007/BF02814479"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000000"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BGEE:curator</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Relation between biological objects that resemble or are related to each other sufficiently to warrant a comparison.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000000"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000000"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000002 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000002">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in homoplasy relationship with</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Similarity that results from independent evolution.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">analogy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">homoplasous to</oboInOwl:hasExactSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000002"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000000"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Similarity that results from independent evolution.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1016/j.jhevol.2006.11.010"/>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000002"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000002"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000004 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000004">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in convergence relationship with</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Convergence usually implies a notion of adaptation.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Homoplasy that involves different underlying mechanisms or structures.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">analogy</oboInOwl:hasRelatedSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000004"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000002"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Homoplasy that involves different underlying mechanisms or structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1016/j.jhevol.2006.11.010"/>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000004"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000004"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000005 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000005">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in parallelism relationship with</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Can be applied for features present in closely related organisms but not present continuously in all the members of the lineage.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Homoplasy that involves homologous underlying mechanisms or structures.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">parallel evolution</oboInOwl:hasExactSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000005"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000002"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Homoplasy that involves homologous underlying mechanisms or structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1016/j.jhevol.2006.11.010"/>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000005"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000005"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000009 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000009">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in reversal relationship with</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Homoplasy that involves phenotypes similar to those seen in ancestors within the lineage.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">atavism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">reversion</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">rudiment</oboInOwl:hasExactSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000009"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000002"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Homoplasy that involves phenotypes similar to those seen in ancestors within the lineage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1016/j.jhevol.2006.11.010"/>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000009"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000009"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000033 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000033">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in mimicry relationship with</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Convergence that results from co-evolution usually involving an evolutionary arms race.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mimicrous to</oboInOwl:hasExactSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000033"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000004"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Convergence that results from co-evolution usually involving an evolutionary arms race.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000033"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000033"/>
+        <oboInOwl:hasDbXref rdf:resource="http:://en.wikipedia.org/wiki/Mimicry"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_HOM0000065 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_HOM0000065">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">in functional equivalence relationship with</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Similarity that is characterized by interchangeability in function.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">functional similarity</oboInOwl:hasRelatedSynonym>
+        <dc:creator rdf:resource="http://bgee.unil.ch"/>
+        <rdfs:seeAlso rdf:resource="&obo;HOM_0000065"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_HOM0000000"/>
+        <dc:source rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20116127"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Similarity that is characterized by interchangeability in function.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1007/BF02814484"/>
+        <oboInOwl:hasDbXref rdf:resource="http://dx.doi.org/10.1038/415741a"/>
+        <oboInOwl:hasDbXref rdf:resource="&obo;HOM_0000065"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_HOM0000065"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

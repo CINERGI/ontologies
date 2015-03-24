@@ -1,0 +1,2408 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY fn "http://www.w3.org/2005/xpath-functions#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY basic "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#" >
+    <!ENTITY ex "http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#" >
+    <!ENTITY li "http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#" >
+    <!ENTITY ds "http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#" >
+    <!ENTITY gm "http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#" >
+    <!ENTITY ci "http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" >
+    <!ENTITY tm "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY h2o "http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#" >
+    <!ENTITY role "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/" >
+    <!ENTITY scope "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/" >
+    <!ENTITY dq "http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#" >
+    <!ENTITY data "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Datatype/" >
+    <!ENTITY progress "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress/" >
+    <!ENTITY datetype "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/" >
+    <!ENTITY medium "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/" >
+    <!ENTITY restrict "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/" >
+    <!ENTITY key "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType/" >
+    <!ENTITY char "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/" >
+    <!ENTITY format "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumFormat/" >
+    <!ENTITY cell "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CellGeometry/" >
+    <!ENTITY topic "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/" >
+    <!ENTITY topol "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopologyLevel/" >
+    <!ENTITY class "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Classification/" >
+    <!ENTITY online "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/OnLineFunction/" >
+    <!ENTITY init "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/" >
+    <!ENTITY assoc "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/AssociationType/" >
+    <!ENTITY present "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/" >
+    <!ENTITY condition "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/" >
+    <!ENTITY dim "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DimensionNameType/" >
+    <!ENTITY cov "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CoverageContentType/" >
+    <!ENTITY geom "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/GeometricObjectType/" >
+    <!ENTITY eval "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/EvaluationMethodType/" >
+    <!ENTITY maint "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/" >
+    <!ENTITY spatial "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"
+     xmlns:progress="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress/"
+     xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+     xmlns:scope="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope/"
+     xmlns:char="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/"
+     xmlns:data="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Datatype/"
+     xmlns:cov="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CoverageContentType/"
+     xmlns:geom="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/GeometricObjectType/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:online="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/OnLineFunction/"
+     xmlns:dim="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DimensionNameType/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:role="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/"
+     xmlns:datetype="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/"
+     xmlns:dq="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality#"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:key="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType/"
+     xmlns:ds="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#"
+     xmlns:topic="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ex="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:assoc="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/AssociationType/"
+     xmlns:spatial="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType/"
+     xmlns:condition="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition/"
+     xmlns:cell="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CellGeometry/"
+     xmlns:eval="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/EvaluationMethodType/"
+     xmlns:class="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Classification/"
+     xmlns:init="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/InitiativeType/"
+     xmlns:format="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumFormat/"
+     xmlns:h2o="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#"
+     xmlns:restrict="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction/"
+     xmlns:medium="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/"
+     xmlns:li="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage#"
+     xmlns:gm="http://def.seegrid.csiro.au/isotc211/iso19107/2003/geometry#"
+     xmlns:topol="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopologyLevel/"
+     xmlns:present="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/PresentationForm/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:maint="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata">
+        <dct:created rdf:datatype="&xsd;dateTime">2010-10-27T00:00:00</dct:created>
+        <dct:modified rdf:datatype="&xsd;dateTime">2013-11-14T00:00:00</dct:modified>
+        <rdfs:comment rdf:datatype="&xsd;string">An OWL representation of parts of the Geographic Metadata model described in ISO 19115:2003 with Corrigendum 2006 - MD Package.
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+NOTE: The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/</rdfs:comment>
+        <dc:title rdf:datatype="&xsd;string">OWL representation of ISO 19115 (Geographic Information - Metadata)</dc:title>
+        <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">md</vann:preferredNamespacePrefix>
+        <dc:creator>Simon Jonathan David COX
+CSIRO</dc:creator>
+        <dc:source>ISO 19115:2003
+ISO 19115:2006 Corrigendum</dc:source>
+        <dc:description>An OWL representation of parts of the Geographic Metadata model described in ISO 19115:2003 with Corrigendum 2006 - MD Package</dc:description>
+        <dc:type>http://www.w3.org/2002/07/owl</dc:type>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/extent"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/lineage"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/AssociationType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CellGeometry"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Classification"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CoverageContentType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Datatype"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DimensionNameType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/GeometricObjectType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/ImagingCondition"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/KeywordType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumFormat"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Progress"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Restriction"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Scope"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/SpatialRepresentationType"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopicCategory"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/TopologyLevel"/>
+        <vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"/>
+        <dct:hasPart rdf:resource="&md;AggregateInformation"/>
+        <dct:hasPart rdf:resource="&md;ApplicationSchema.name"/>
+        <dct:hasPart rdf:resource="&md;ApplicationSchemaInformation"/>
+        <dct:hasPart rdf:resource="&md;Band"/>
+        <dct:hasPart rdf:resource="&md;BrowseGraphic"/>
+        <dct:hasPart rdf:resource="&md;CellGeometryCode"/>
+        <dct:hasPart rdf:resource="&md;CharacterSetCode"/>
+        <dct:hasPart rdf:resource="&md;ClassificationCode"/>
+        <dct:hasPart rdf:resource="&md;Constraints"/>
+        <dct:hasPart rdf:resource="&md;ContentInformation"/>
+        <dct:hasPart rdf:resource="&md;CoverageContentTypeCode"/>
+        <dct:hasPart rdf:resource="&md;CoverageDescription"/>
+        <dct:hasPart rdf:resource="&md;DataIdentification"/>
+        <dct:hasPart rdf:resource="&md;DatatypeCode"/>
+        <dct:hasPart rdf:resource="&md;DigitalTransferOptions"/>
+        <dct:hasPart rdf:resource="&md;Dimension"/>
+        <dct:hasPart rdf:resource="&md;DimensionNameTypeCode"/>
+        <dct:hasPart rdf:resource="&md;Distribution"/>
+        <dct:hasPart rdf:resource="&md;DistributionUnits"/>
+        <dct:hasPart rdf:resource="&md;Distributor"/>
+        <dct:hasPart rdf:resource="&md;ExtendedElementInformation"/>
+        <dct:hasPart rdf:resource="&md;FeatureCatalogueDescription"/>
+        <dct:hasPart rdf:resource="&md;Format"/>
+        <dct:hasPart rdf:resource="&md;GeometricObjectTypeCode"/>
+        <dct:hasPart rdf:resource="&md;GeometricObjects"/>
+        <dct:hasPart rdf:resource="&md;Georectified"/>
+        <dct:hasPart rdf:resource="&md;Georeferenceable"/>
+        <dct:hasPart rdf:resource="&md;GridSpatialRepresentation"/>
+        <dct:hasPart rdf:resource="&md;Identification"/>
+        <dct:hasPart rdf:resource="&md;ImageDescription"/>
+        <dct:hasPart rdf:resource="&md;ImagingConditionCode"/>
+        <dct:hasPart rdf:resource="&md;KeywordTypeCode"/>
+        <dct:hasPart rdf:resource="&md;Keywords"/>
+        <dct:hasPart rdf:resource="&md;LegalConstraints"/>
+        <dct:hasPart rdf:resource="&md;MaintenanceFrequencyCode"/>
+        <dct:hasPart rdf:resource="&md;MaintenanceInformation"/>
+        <dct:hasPart rdf:resource="&md;Medium"/>
+        <dct:hasPart rdf:resource="&md;Medium.name"/>
+        <dct:hasPart rdf:resource="&md;MediumFormatCode"/>
+        <dct:hasPart rdf:resource="&md;MediumNameCode"/>
+        <dct:hasPart rdf:resource="&md;Metadata"/>
+        <dct:hasPart rdf:resource="&md;MetadataExtensionInformation"/>
+        <dct:hasPart rdf:resource="&md;ObligationCode"/>
+        <dct:hasPart rdf:resource="&md;PixelOrientationCode"/>
+        <dct:hasPart rdf:resource="&md;PortrayalCatalogueReference"/>
+        <dct:hasPart rdf:resource="&md;ProgressCode"/>
+        <dct:hasPart rdf:resource="&md;RangeDimension"/>
+        <dct:hasPart rdf:resource="&md;ReferenceSystem"/>
+        <dct:hasPart rdf:resource="&md;RepresentativeFraction"/>
+        <dct:hasPart rdf:resource="&md;Resolution"/>
+        <dct:hasPart rdf:resource="&md;RestrictionCode"/>
+        <dct:hasPart rdf:resource="&md;ScopeCode"/>
+        <dct:hasPart rdf:resource="&md;ScopeDescription"/>
+        <dct:hasPart rdf:resource="&md;SecurityConstraints"/>
+        <dct:hasPart rdf:resource="&md;SpatialRepresentation"/>
+        <dct:hasPart rdf:resource="&md;SpatialRepresentationTypeCode"/>
+        <dct:hasPart rdf:resource="&md;StandardOrderProcess"/>
+        <dct:hasPart rdf:resource="&md;TopicCategoryCode"/>
+        <dct:hasPart rdf:resource="&md;TopologyLevelCode"/>
+        <dct:hasPart rdf:resource="&md;Usage"/>
+        <dct:hasPart rdf:resource="&md;VectorSpatialRepresentation"/>
+        <dct:hasPart rdf:resource="&md;abstract"/>
+        <dct:hasPart rdf:resource="&md;accessConstraints"/>
+        <dct:hasPart rdf:resource="&md;aggregateDataSetIdentifier"/>
+        <dct:hasPart rdf:resource="&md;aggregateDataSetName"/>
+        <dct:hasPart rdf:resource="&md;aggregationInfo"/>
+        <dct:hasPart rdf:resource="&md;amendmentNumber"/>
+        <dct:hasPart rdf:resource="&md;applicationSchemaInfo"/>
+        <dct:hasPart rdf:resource="&md;assocationType"/>
+        <dct:hasPart rdf:resource="&md;attributeDescription"/>
+        <dct:hasPart rdf:resource="&md;authority"/>
+        <dct:hasPart rdf:resource="&md;axisDimensionProperties"/>
+        <dct:hasPart rdf:resource="&md;bitsPerValue"/>
+        <dct:hasPart rdf:resource="&md;cameraCalibrationInformationAvailability"/>
+        <dct:hasPart rdf:resource="&md;cellGeometry"/>
+        <dct:hasPart rdf:resource="&md;centerPoint"/>
+        <dct:hasPart rdf:resource="&md;characterSet"/>
+        <dct:hasPart rdf:resource="&md;checkPointAvailability"/>
+        <dct:hasPart rdf:resource="&md;checkPointDescription"/>
+        <dct:hasPart rdf:resource="&md;citation"/>
+        <dct:hasPart rdf:resource="&md;classification"/>
+        <dct:hasPart rdf:resource="&md;classificationSystem"/>
+        <dct:hasPart rdf:resource="&md;cloudCoverPercentage"/>
+        <dct:hasPart rdf:resource="&md;complianceCode"/>
+        <dct:hasPart rdf:resource="&md;compressionGenerationQuantity"/>
+        <dct:hasPart rdf:resource="&md;condition"/>
+        <dct:hasPart rdf:resource="&md;constraintLanguage"/>
+        <dct:hasPart rdf:resource="&md;contact"/>
+        <dct:hasPart rdf:resource="&md;contentInfo"/>
+        <dct:hasPart rdf:resource="&md;contentType"/>
+        <dct:hasPart rdf:resource="&md;controlPointAvailability"/>
+        <dct:hasPart rdf:resource="&md;cornerPoints"/>
+        <dct:hasPart rdf:resource="&md;credit"/>
+        <dct:hasPart rdf:resource="&md;dataQualityInfo"/>
+        <dct:hasPart rdf:resource="&md;dataSet"/>
+        <dct:hasPart rdf:resource="&md;dataType"/>
+        <dct:hasPart rdf:resource="&md;dateOfNextUpdate"/>
+        <dct:hasPart rdf:resource="&md;dateStamp"/>
+        <dct:hasPart rdf:resource="&md;definition"/>
+        <dct:hasPart rdf:resource="&md;denominator"/>
+        <dct:hasPart rdf:resource="&md;density"/>
+        <dct:hasPart rdf:resource="&md;densityUnits"/>
+        <dct:hasPart rdf:resource="&md;describes"/>
+        <dct:hasPart rdf:resource="&md;descriptiveKeywords"/>
+        <dct:hasPart rdf:resource="&md;descriptor"/>
+        <dct:hasPart rdf:resource="&md;dimension"/>
+        <dct:hasPart rdf:resource="&md;dimensionName"/>
+        <dct:hasPart rdf:resource="&md;dimensionSize"/>
+        <dct:hasPart rdf:resource="&md;distributionFormat"/>
+        <dct:hasPart rdf:resource="&md;distributionInfo"/>
+        <dct:hasPart rdf:resource="&md;distributionOrderProcess"/>
+        <dct:hasPart rdf:resource="&md;distributor"/>
+        <dct:hasPart rdf:resource="&md;distributorContact"/>
+        <dct:hasPart rdf:resource="&md;distributorFormat"/>
+        <dct:hasPart rdf:resource="&md;distributorTransferOptions"/>
+        <dct:hasPart rdf:resource="&md;domainCode"/>
+        <dct:hasPart rdf:resource="&md;domainValue"/>
+        <dct:hasPart rdf:resource="&md;environmentDescription"/>
+        <dct:hasPart rdf:resource="&md;equivalentScale"/>
+        <dct:hasPart rdf:resource="&md;extendedElementInformation"/>
+        <dct:hasPart rdf:resource="&md;extensionOnLineResource"/>
+        <dct:hasPart rdf:resource="&md;extent"/>
+        <dct:hasPart rdf:resource="&md;featureAttribute"/>
+        <dct:hasPart rdf:resource="&md;featureCatalogueCitation"/>
+        <dct:hasPart rdf:resource="&md;featureType"/>
+        <dct:hasPart rdf:resource="&md;featureTypes"/>
+        <dct:hasPart rdf:resource="&md;fees"/>
+        <dct:hasPart rdf:resource="&md;fileDecompressionTechnique"/>
+        <dct:hasPart rdf:resource="&md;fileDescription"/>
+        <dct:hasPart rdf:resource="&md;fileIdentifier"/>
+        <dct:hasPart rdf:resource="&md;fileName"/>
+        <dct:hasPart rdf:resource="&md;fileType"/>
+        <dct:hasPart rdf:resource="&md;filmDistortionInformationAvailability"/>
+        <dct:hasPart rdf:resource="&md;formatDistributor"/>
+        <dct:hasPart rdf:resource="&md;geometricObjectCount"/>
+        <dct:hasPart rdf:resource="&md;geometricObjectType"/>
+        <dct:hasPart rdf:resource="&md;geometricObjects"/>
+        <dct:hasPart rdf:resource="&md;georeferencedParameters"/>
+        <dct:hasPart rdf:resource="&md;graphicOverview"/>
+        <dct:hasPart rdf:resource="&md;graphicsFile"/>
+        <dct:hasPart rdf:resource="&md;handlingDescription"/>
+        <dct:hasPart rdf:resource="&md;hierarchyLevel"/>
+        <dct:hasPart rdf:resource="&md;hierarchyLevelName"/>
+        <dct:hasPart rdf:resource="&md;identificationInfo"/>
+        <dct:hasPart rdf:resource="&md;illuminationAzimuthAngle"/>
+        <dct:hasPart rdf:resource="&md;illuminationElevationAngle"/>
+        <dct:hasPart rdf:resource="&md;imageQualityCode"/>
+        <dct:hasPart rdf:resource="&md;imagingCondition"/>
+        <dct:hasPart rdf:resource="&md;includedWithDataset"/>
+        <dct:hasPart rdf:resource="&md;initiativeType"/>
+        <dct:hasPart rdf:resource="&md;keyword"/>
+        <dct:hasPart rdf:resource="&md;language"/>
+        <dct:hasPart rdf:resource="&md;lensDistortionInformationAvailability"/>
+        <dct:hasPart rdf:resource="&md;locale"/>
+        <dct:hasPart rdf:resource="&md;maintenanceAndUpdateFrequency"/>
+        <dct:hasPart rdf:resource="&md;maintenanceNote"/>
+        <dct:hasPart rdf:resource="&md;maxValue"/>
+        <dct:hasPart rdf:resource="&md;maximumOccurrence"/>
+        <dct:hasPart rdf:resource="&md;mediumFormat"/>
+        <dct:hasPart rdf:resource="&md;mediumNote"/>
+        <dct:hasPart rdf:resource="&md;metadataConstraints"/>
+        <dct:hasPart rdf:resource="&md;metadataExtensionInfo"/>
+        <dct:hasPart rdf:resource="&md;metadataMaintenance"/>
+        <dct:hasPart rdf:resource="&md;metadataStandardName"/>
+        <dct:hasPart rdf:resource="&md;metadataStandardVersion"/>
+        <dct:hasPart rdf:resource="&md;minValue"/>
+        <dct:hasPart rdf:resource="&md;name"/>
+        <dct:hasPart rdf:resource="&md;numberOfDimensions"/>
+        <dct:hasPart rdf:resource="&md;obligation"/>
+        <dct:hasPart rdf:resource="&md;offLine"/>
+        <dct:hasPart rdf:resource="&md;offset"/>
+        <dct:hasPart rdf:resource="&md;online"/>
+        <dct:hasPart rdf:resource="&md;orderingInstructions"/>
+        <dct:hasPart rdf:resource="&md;orientationParameterAvailability"/>
+        <dct:hasPart rdf:resource="&md;orientationParameterDescription"/>
+        <dct:hasPart rdf:resource="&md;otherConstraints"/>
+        <dct:hasPart rdf:resource="&md;parameterCitation"/>
+        <dct:hasPart rdf:resource="&md;parentEntity"/>
+        <dct:hasPart rdf:resource="&md;parentIdentifier"/>
+        <dct:hasPart rdf:resource="&md;peakResponse"/>
+        <dct:hasPart rdf:resource="&md;plannedAvailableDateTime"/>
+        <dct:hasPart rdf:resource="&md;pointInPixel"/>
+        <dct:hasPart rdf:resource="&md;pointOfContact"/>
+        <dct:hasPart rdf:resource="&md;portrayalCatalogueCitation"/>
+        <dct:hasPart rdf:resource="&md;portrayalCatalogueInfo"/>
+        <dct:hasPart rdf:resource="&md;processingLevelCode"/>
+        <dct:hasPart rdf:resource="&md;propertyType"/>
+        <dct:hasPart rdf:resource="&md;purpose"/>
+        <dct:hasPart rdf:resource="&md;radiometricCalibrationInformationAvailability"/>
+        <dct:hasPart rdf:resource="&md;rationale"/>
+        <dct:hasPart rdf:resource="&md;referenceSystemIdentifier"/>
+        <dct:hasPart rdf:resource="&md;referenceSystemInfo"/>
+        <dct:hasPart rdf:resource="&md;resolution"/>
+        <dct:hasPart rdf:resource="&md;resourceConstraints"/>
+        <dct:hasPart rdf:resource="&md;resourceFormat"/>
+        <dct:hasPart rdf:resource="&md;resourceMaintenance"/>
+        <dct:hasPart rdf:resource="&md;resourceSpecificUsage"/>
+        <dct:hasPart rdf:resource="&md;rule"/>
+        <dct:hasPart rdf:resource="&md;scaleFactor"/>
+        <dct:hasPart rdf:resource="&md;schemaAscii"/>
+        <dct:hasPart rdf:resource="&md;schemaLanguage"/>
+        <dct:hasPart rdf:resource="&md;sequenceIdentifier"/>
+        <dct:hasPart rdf:resource="&md;series"/>
+        <dct:hasPart rdf:resource="&md;shortName"/>
+        <dct:hasPart rdf:resource="&md;softwareDevelopmentFile"/>
+        <dct:hasPart rdf:resource="&md;softwareDevelopmentFileFormat"/>
+        <dct:hasPart rdf:resource="&md;source"/>
+        <dct:hasPart rdf:resource="&md;spatialRepresentationInfo"/>
+        <dct:hasPart rdf:resource="&md;spatialRepresentationType"/>
+        <dct:hasPart rdf:resource="&md;spatialResolution"/>
+        <dct:hasPart rdf:resource="&md;specificUsage"/>
+        <dct:hasPart rdf:resource="&md;specification"/>
+        <dct:hasPart rdf:resource="&md;status"/>
+        <dct:hasPart rdf:resource="&md;supplementalInformation"/>
+        <dct:hasPart rdf:resource="&md;thesaurusName"/>
+        <dct:hasPart rdf:resource="&md;toneGradation"/>
+        <dct:hasPart rdf:resource="&md;topicCategory"/>
+        <dct:hasPart rdf:resource="&md;topologyLevel"/>
+        <dct:hasPart rdf:resource="&md;transferOptions"/>
+        <dct:hasPart rdf:resource="&md;transferSize"/>
+        <dct:hasPart rdf:resource="&md;transformationDimensionDescription"/>
+        <dct:hasPart rdf:resource="&md;transformationDimensionMapping"/>
+        <dct:hasPart rdf:resource="&md;transformationParameterAvailability"/>
+        <dct:hasPart rdf:resource="&md;triangulationIndicator"/>
+        <dct:hasPart rdf:resource="&md;turnaround"/>
+        <dct:hasPart rdf:resource="&md;type"/>
+        <dct:hasPart rdf:resource="&md;units"/>
+        <dct:hasPart rdf:resource="&md;unitsOfDistribution"/>
+        <dct:hasPart rdf:resource="&md;updateScope"/>
+        <dct:hasPart rdf:resource="&md;updateScopeDescription"/>
+        <dct:hasPart rdf:resource="&md;usageDateTime"/>
+        <dct:hasPart rdf:resource="&md;useConstraints"/>
+        <dct:hasPart rdf:resource="&md;useLimitation"/>
+        <dct:hasPart rdf:resource="&md;userContactInfo"/>
+        <dct:hasPart rdf:resource="&md;userDefinedMaintenanceFrequency"/>
+        <dct:hasPart rdf:resource="&md;userDeterminedLimitations"/>
+        <dct:hasPart rdf:resource="&md;userNote"/>
+        <dct:hasPart rdf:resource="&md;version"/>
+        <dct:hasPart rdf:resource="&md;volumes"/>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/metadata.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/iso19115/2003/metadata.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#ObligationCode -->
+
+    <rdfs:Datatype rdf:about="&md;ObligationCode">
+        <rdfs:label rdf:datatype="&xsd;string">Obligation code</rdfs:label>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">conditional</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">mandatory</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">optional</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <skos:notation rdf:datatype="&h2o;ISOClassName">MD_ObligationCode</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#PixelOrientationCode -->
+
+    <rdfs:Datatype rdf:about="&md;PixelOrientationCode">
+        <rdfs:label rdf:datatype="&xsd;string">Pixel orientation code</rdfs:label>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">center</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">lowerLeft</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">lowerRight</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">upperLeft</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first rdf:datatype="&xsd;string">upperRight</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="&xsd;duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#has -->
+
+    <rdf:Description rdf:about="&ds;has"/>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset#seriesMetadata -->
+
+    <rdf:Description rdf:about="&ds;seriesMetadata"/>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#ApplicationSchema.name -->
+
+    <owl:ObjectProperty rdf:about="&md;ApplicationSchema.name">
+        <rdfs:label rdf:datatype="&xsd;string">Application schema.name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#Medium.name -->
+
+    <owl:ObjectProperty rdf:about="&md;Medium.name">
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#accessConstraints -->
+
+    <owl:ObjectProperty rdf:about="&md;accessConstraints">
+        <rdfs:label rdf:datatype="&xsd;string">access constraints</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Value should be chosen from &lt;http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata/RestrictionCode&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#aggregateDataSetIdentifier -->
+
+    <owl:ObjectProperty rdf:about="&md;aggregateDataSetIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">aggregate data set identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#aggregateDataSetName -->
+
+    <owl:ObjectProperty rdf:about="&md;aggregateDataSetName">
+        <rdfs:label rdf:datatype="&xsd;string">aggregate data set name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#aggregationInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;aggregationInfo">
+        <rdfs:label rdf:datatype="&xsd;string">aggregation info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#applicationSchemaInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;applicationSchemaInfo">
+        <rdfs:label rdf:datatype="&xsd;string">application schema info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#assocationType -->
+
+    <owl:ObjectProperty rdf:about="&md;assocationType">
+        <rdfs:label rdf:datatype="&xsd;string">assocation type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#attributeDescription -->
+
+    <owl:ObjectProperty rdf:about="&md;attributeDescription">
+        <rdfs:label rdf:datatype="&xsd;string">attribute description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#authority -->
+
+    <owl:ObjectProperty rdf:about="&md;authority">
+        <rdfs:label rdf:datatype="&xsd;string">authority</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#axisDimensionProperties -->
+
+    <owl:ObjectProperty rdf:about="&md;axisDimensionProperties">
+        <rdfs:label rdf:datatype="&xsd;string">axis dimension properties</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Sequence members are md:Dimension</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#bitsPerValue -->
+
+    <owl:ObjectProperty rdf:about="&md;bitsPerValue">
+        <rdfs:label rdf:datatype="&xsd;string">bits per value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#cellGeometry -->
+
+    <owl:ObjectProperty rdf:about="&md;cellGeometry">
+        <rdfs:label rdf:datatype="&xsd;string">cell geometry</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#centerPoint -->
+
+    <owl:ObjectProperty rdf:about="&md;centerPoint">
+        <rdfs:label rdf:datatype="&xsd;string">center point</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Sequence members are gm:Point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#characterSet -->
+
+    <owl:ObjectProperty rdf:about="&md;characterSet">
+        <rdfs:label rdf:datatype="&xsd;string">character set</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#citation -->
+
+    <owl:ObjectProperty rdf:about="&md;citation">
+        <rdfs:label rdf:datatype="&xsd;string">citation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#classification -->
+
+    <owl:ObjectProperty rdf:about="&md;classification">
+        <rdfs:label rdf:datatype="&xsd;string">classification</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#cloudCoverPercentage -->
+
+    <owl:ObjectProperty rdf:about="&md;cloudCoverPercentage">
+        <rdfs:label rdf:datatype="&xsd;string">cloud cover percentage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#compressionGenerationQuantity -->
+
+    <owl:ObjectProperty rdf:about="&md;compressionGenerationQuantity">
+        <rdfs:label rdf:datatype="&xsd;string">compression generation quantity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#contact -->
+
+    <owl:ObjectProperty rdf:about="&md;contact">
+        <rdfs:label rdf:datatype="&xsd;string">contact</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#contentInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;contentInfo">
+        <rdfs:label rdf:datatype="&xsd;string">content info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#contentType -->
+
+    <owl:ObjectProperty rdf:about="&md;contentType">
+        <rdfs:label rdf:datatype="&xsd;string">content type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#cornerPoints -->
+
+    <owl:ObjectProperty rdf:about="&md;cornerPoints">
+        <rdfs:label rdf:datatype="&xsd;string">corner point</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Sequence members are GM_Point</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dataQualityInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;dataQualityInfo">
+        <rdfs:label rdf:datatype="&xsd;string">data quality info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dataType -->
+
+    <owl:ObjectProperty rdf:about="&md;dataType">
+        <rdfs:label rdf:datatype="&xsd;string">data type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#denominator -->
+
+    <owl:ObjectProperty rdf:about="&md;denominator">
+        <rdfs:label rdf:datatype="&xsd;string">denominator</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#density -->
+
+    <owl:ObjectProperty rdf:about="&md;density">
+        <rdfs:label rdf:datatype="&xsd;string">density</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#describes -->
+
+    <owl:ObjectProperty rdf:about="&md;describes">
+        <rdfs:label rdf:datatype="&xsd;string">describes</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <owl:inverseOf rdf:resource="&ds;has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#descriptiveKeywords -->
+
+    <owl:ObjectProperty rdf:about="&md;descriptiveKeywords">
+        <rdfs:label rdf:datatype="&xsd;string">descriptive keywords</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dimension -->
+
+    <owl:ObjectProperty rdf:about="&md;dimension">
+        <rdfs:label rdf:datatype="&xsd;string">dimension</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dimensionName -->
+
+    <owl:ObjectProperty rdf:about="&md;dimensionName">
+        <rdfs:label rdf:datatype="&xsd;string">dimension name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dimensionSize -->
+
+    <owl:ObjectProperty rdf:about="&md;dimensionSize">
+        <rdfs:label rdf:datatype="&xsd;string">dimension size</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributionFormat -->
+
+    <owl:ObjectProperty rdf:about="&md;distributionFormat">
+        <rdfs:label rdf:datatype="&xsd;string">distribution format</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributionInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;distributionInfo">
+        <rdfs:label rdf:datatype="&xsd;string">distribution info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributionOrderProcess -->
+
+    <owl:ObjectProperty rdf:about="&md;distributionOrderProcess">
+        <rdfs:label rdf:datatype="&xsd;string">distribution order process</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributor -->
+
+    <owl:ObjectProperty rdf:about="&md;distributor">
+        <rdfs:label rdf:datatype="&xsd;string">distributor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributorContact -->
+
+    <owl:ObjectProperty rdf:about="&md;distributorContact">
+        <rdfs:label rdf:datatype="&xsd;string">distributor contact</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributorFormat -->
+
+    <owl:ObjectProperty rdf:about="&md;distributorFormat">
+        <rdfs:label rdf:datatype="&xsd;string">distributor format</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#distributorTransferOptions -->
+
+    <owl:ObjectProperty rdf:about="&md;distributorTransferOptions">
+        <rdfs:label rdf:datatype="&xsd;string">distributor transfer options</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#domainCode -->
+
+    <owl:ObjectProperty rdf:about="&md;domainCode">
+        <rdfs:label rdf:datatype="&xsd;string">domain code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#equivalentScale -->
+
+    <owl:ObjectProperty rdf:about="&md;equivalentScale">
+        <rdfs:label rdf:datatype="&xsd;string">equivalent scale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#extendedElementInformation -->
+
+    <owl:ObjectProperty rdf:about="&md;extendedElementInformation">
+        <rdfs:label rdf:datatype="&xsd;string">extended element information</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#extensionOnLineResource -->
+
+    <owl:ObjectProperty rdf:about="&md;extensionOnLineResource">
+        <rdfs:label rdf:datatype="&xsd;string">extension on line resource</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#extent -->
+
+    <owl:ObjectProperty rdf:about="&md;extent">
+        <rdfs:label rdf:datatype="&xsd;string">extent</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&ex;Extent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#featureAttribute -->
+
+    <owl:ObjectProperty rdf:about="&md;featureAttribute">
+        <rdfs:label rdf:datatype="&xsd;string">feature attribute</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#featureCatalogueCitation -->
+
+    <owl:ObjectProperty rdf:about="&md;featureCatalogueCitation">
+        <rdfs:label rdf:datatype="&xsd;string">feature catalogue citation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#featureType -->
+
+    <owl:ObjectProperty rdf:about="&md;featureType">
+        <rdfs:label rdf:datatype="&xsd;string">feature type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#featureTypes -->
+
+    <owl:ObjectProperty rdf:about="&md;featureTypes">
+        <rdfs:label rdf:datatype="&xsd;string">feature types</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#formatDistributor -->
+
+    <owl:ObjectProperty rdf:about="&md;formatDistributor">
+        <rdfs:label rdf:datatype="&xsd;string">format distributor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <owl:inverseOf rdf:resource="&md;distributorFormat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#geometricObjectCount -->
+
+    <owl:ObjectProperty rdf:about="&md;geometricObjectCount">
+        <rdfs:label rdf:datatype="&xsd;string">geometric object count</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#geometricObjectType -->
+
+    <owl:ObjectProperty rdf:about="&md;geometricObjectType">
+        <rdfs:label rdf:datatype="&xsd;string">geometric object type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#geometricObjects -->
+
+    <owl:ObjectProperty rdf:about="&md;geometricObjects">
+        <rdfs:label rdf:datatype="&xsd;string">geometric objects</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#georeferencedParameters -->
+
+    <owl:ObjectProperty rdf:about="&md;georeferencedParameters">
+        <rdfs:label rdf:datatype="&xsd;string">georeferenced parameters</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#graphicOverview -->
+
+    <owl:ObjectProperty rdf:about="&md;graphicOverview">
+        <rdfs:label rdf:datatype="&xsd;string">graphic overview</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#graphicsFile -->
+
+    <owl:ObjectProperty rdf:about="&md;graphicsFile">
+        <rdfs:label rdf:datatype="&xsd;string">graphics file</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#hierarchyLevel -->
+
+    <owl:ObjectProperty rdf:about="&md;hierarchyLevel">
+        <rdfs:label rdf:datatype="&xsd;string">hierarchy level</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#identificationInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;identificationInfo">
+        <rdfs:label rdf:datatype="&xsd;string">identification info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#illuminationAzimuthAngle -->
+
+    <owl:ObjectProperty rdf:about="&md;illuminationAzimuthAngle">
+        <rdfs:label rdf:datatype="&xsd;string">illumination Azimuth Angle</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#illuminationElevationAngle -->
+
+    <owl:ObjectProperty rdf:about="&md;illuminationElevationAngle">
+        <rdfs:label rdf:datatype="&xsd;string">illumination elevation Angle</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#imageQualityCode -->
+
+    <owl:ObjectProperty rdf:about="&md;imageQualityCode">
+        <rdfs:label rdf:datatype="&xsd;string">image quality code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#imagingCondition -->
+
+    <owl:ObjectProperty rdf:about="&md;imagingCondition">
+        <rdfs:label rdf:datatype="&xsd;string">imaging condition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#initiativeType -->
+
+    <owl:ObjectProperty rdf:about="&md;initiativeType">
+        <rdfs:label rdf:datatype="&xsd;string">initiative type</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Value should be chosen from &lt;http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataset/InitiativeTypeCode&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#locale -->
+
+    <owl:ObjectProperty rdf:about="&md;locale">
+        <rdfs:label rdf:datatype="&xsd;string">locale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#maintenanceAndUpdateFrequency -->
+
+    <owl:ObjectProperty rdf:about="&md;maintenanceAndUpdateFrequency">
+        <rdfs:label rdf:datatype="&xsd;string">maintenance and update frequency</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Value should be chosen from &lt;http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata/MaintenanceFrequenceCode&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#maxValue -->
+
+    <owl:ObjectProperty rdf:about="&md;maxValue">
+        <rdfs:label rdf:datatype="&xsd;string">max value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#mediumFormat -->
+
+    <owl:ObjectProperty rdf:about="&md;mediumFormat">
+        <rdfs:label rdf:datatype="&xsd;string">medium format</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#metadataConstraints -->
+
+    <owl:ObjectProperty rdf:about="&md;metadataConstraints">
+        <rdfs:label rdf:datatype="&xsd;string">metadata constraints</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#metadataExtensionInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;metadataExtensionInfo">
+        <rdfs:label rdf:datatype="&xsd;string">metadata extension info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#metadataMaintenance -->
+
+    <owl:ObjectProperty rdf:about="&md;metadataMaintenance">
+        <rdfs:label rdf:datatype="&xsd;string">metadata maintenance</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#minValue -->
+
+    <owl:ObjectProperty rdf:about="&md;minValue">
+        <rdfs:label rdf:datatype="&xsd;string">min value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#numberOfDimensions -->
+
+    <owl:ObjectProperty rdf:about="&md;numberOfDimensions">
+        <rdfs:label rdf:datatype="&xsd;string">number of dimensions</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#offLine -->
+
+    <owl:ObjectProperty rdf:about="&md;offLine">
+        <rdfs:label rdf:datatype="&xsd;string">off line</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#offset -->
+
+    <owl:ObjectProperty rdf:about="&md;offset">
+        <rdfs:label rdf:datatype="&xsd;string">offset</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#online -->
+
+    <owl:ObjectProperty rdf:about="&md;online">
+        <rdfs:label rdf:datatype="&xsd;string">online</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#parameterCitation -->
+
+    <owl:ObjectProperty rdf:about="&md;parameterCitation">
+        <rdfs:label rdf:datatype="&xsd;string">parameter citation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#peakResponse -->
+
+    <owl:ObjectProperty rdf:about="&md;peakResponse">
+        <rdfs:label rdf:datatype="&xsd;string">peak response</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#pointOfContact -->
+
+    <owl:ObjectProperty rdf:about="&md;pointOfContact">
+        <rdfs:label rdf:datatype="&xsd;string">point of contact</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#portrayalCatalogueCitation -->
+
+    <owl:ObjectProperty rdf:about="&md;portrayalCatalogueCitation">
+        <rdfs:label rdf:datatype="&xsd;string">portrayal catalogue citation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#portrayalCatalogueInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;portrayalCatalogueInfo">
+        <rdfs:label rdf:datatype="&xsd;string">portrayal catalogue info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#processingLevelCode -->
+
+    <owl:ObjectProperty rdf:about="&md;processingLevelCode">
+        <rdfs:label rdf:datatype="&xsd;string">processing level code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#propertyType -->
+
+    <owl:ObjectProperty rdf:about="&md;propertyType">
+        <rdfs:label rdf:datatype="&xsd;string">property type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#referenceSystemIdentifier -->
+
+    <owl:ObjectProperty rdf:about="&md;referenceSystemIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">reference system identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#referenceSystemInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;referenceSystemInfo">
+        <rdfs:label rdf:datatype="&xsd;string">reference system info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#resolution -->
+
+    <owl:ObjectProperty rdf:about="&md;resolution">
+        <rdfs:label rdf:datatype="&xsd;string">resolution</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#resourceConstraints -->
+
+    <owl:ObjectProperty rdf:about="&md;resourceConstraints">
+        <rdfs:label rdf:datatype="&xsd;string">resource constraints</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#resourceFormat -->
+
+    <owl:ObjectProperty rdf:about="&md;resourceFormat">
+        <rdfs:label rdf:datatype="&xsd;string">resource format</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#resourceMaintenance -->
+
+    <owl:ObjectProperty rdf:about="&md;resourceMaintenance">
+        <rdfs:label rdf:datatype="&xsd;string">resource maintenance</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#resourceSpecificUsage -->
+
+    <owl:ObjectProperty rdf:about="&md;resourceSpecificUsage">
+        <rdfs:label rdf:datatype="&xsd;string">resource specific usage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#scaleFactor -->
+
+    <owl:ObjectProperty rdf:about="&md;scaleFactor">
+        <rdfs:label rdf:datatype="&xsd;string">scale factor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#sequenceIdentifier -->
+
+    <owl:ObjectProperty rdf:about="&md;sequenceIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">sequence identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#series -->
+
+    <owl:ObjectProperty rdf:about="&md;series">
+        <rdfs:label rdf:datatype="&xsd;string">series</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <owl:inverseOf rdf:resource="&ds;seriesMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#softwareDevelopmentFile -->
+
+    <owl:ObjectProperty rdf:about="&md;softwareDevelopmentFile">
+        <rdfs:label rdf:datatype="&xsd;string">software development file</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#source -->
+
+    <owl:ObjectProperty rdf:about="&md;source">
+        <rdfs:label rdf:datatype="&xsd;string">source</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#spatialRepresentationInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;spatialRepresentationInfo">
+        <rdfs:label rdf:datatype="&xsd;string">spatial representation info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#spatialRepresentationType -->
+
+    <owl:ObjectProperty rdf:about="&md;spatialRepresentationType">
+        <rdfs:label rdf:datatype="&xsd;string">spatial representation type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#spatialResolution -->
+
+    <owl:ObjectProperty rdf:about="&md;spatialResolution">
+        <rdfs:label rdf:datatype="&xsd;string">spatial resolution</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#status -->
+
+    <owl:ObjectProperty rdf:about="&md;status">
+        <rdfs:label rdf:datatype="&xsd;string">status</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#thesaurusName -->
+
+    <owl:ObjectProperty rdf:about="&md;thesaurusName">
+        <rdfs:label rdf:datatype="&xsd;string">thesaurus name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#toneGradation -->
+
+    <owl:ObjectProperty rdf:about="&md;toneGradation">
+        <rdfs:label rdf:datatype="&xsd;string">tone gradation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#topicCategory -->
+
+    <owl:ObjectProperty rdf:about="&md;topicCategory">
+        <rdfs:label rdf:datatype="&xsd;string">topic category</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#topologyLevel -->
+
+    <owl:ObjectProperty rdf:about="&md;topologyLevel">
+        <rdfs:label rdf:datatype="&xsd;string">topology level</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transferOptions -->
+
+    <owl:ObjectProperty rdf:about="&md;transferOptions">
+        <rdfs:label rdf:datatype="&xsd;string">transfer options</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transferSize -->
+
+    <owl:ObjectProperty rdf:about="&md;transferSize">
+        <rdfs:label rdf:datatype="&xsd;string">transfer size</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#type -->
+
+    <owl:ObjectProperty rdf:about="&md;type">
+        <rdfs:label rdf:datatype="&xsd;string">type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#units -->
+
+    <owl:ObjectProperty rdf:about="&md;units">
+        <rdfs:label rdf:datatype="&xsd;string">units</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&basic;uom"/>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#updateScope -->
+
+    <owl:ObjectProperty rdf:about="&md;updateScope">
+        <rdfs:label rdf:datatype="&xsd;string">update scope</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Value should be chosen from &lt;http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata/ScopeCode&gt;</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#updateScopeDescription -->
+
+    <owl:ObjectProperty rdf:about="&md;updateScopeDescription">
+        <rdfs:label rdf:datatype="&xsd;string">update scope description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#useConstraints -->
+
+    <owl:ObjectProperty rdf:about="&md;useConstraints">
+        <rdfs:label rdf:datatype="&xsd;string">use constraints</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#userContactInfo -->
+
+    <owl:ObjectProperty rdf:about="&md;userContactInfo">
+        <rdfs:label rdf:datatype="&xsd;string">user contact info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#volumes -->
+
+    <owl:ObjectProperty rdf:about="&md;volumes">
+        <rdfs:label rdf:datatype="&xsd;string">volumes</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#abstract -->
+
+    <owl:DatatypeProperty rdf:about="&md;abstract">
+        <rdfs:label rdf:datatype="&xsd;string">abstract</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#amendmentNumber -->
+
+    <owl:DatatypeProperty rdf:about="&md;amendmentNumber">
+        <rdfs:label rdf:datatype="&xsd;string">amendment number</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#bitsPerValue -->
+
+    <owl:DatatypeProperty rdf:about="&md;bitsPerValue">
+        <rdfs:label rdf:datatype="&xsd;string">bits per value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#cameraCalibrationInformationAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;cameraCalibrationInformationAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">camera calibration information availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#checkPointAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;checkPointAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">check point availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#checkPointDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;checkPointDescription">
+        <rdfs:label rdf:datatype="&xsd;string">check point description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#classificationSystem -->
+
+    <owl:DatatypeProperty rdf:about="&md;classificationSystem">
+        <rdfs:label rdf:datatype="&xsd;string">classification system</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#cloudCoverPercentage -->
+
+    <owl:DatatypeProperty rdf:about="&md;cloudCoverPercentage">
+        <rdfs:label rdf:datatype="&xsd;string">cloud cover percentage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#complianceCode -->
+
+    <owl:DatatypeProperty rdf:about="&md;complianceCode">
+        <rdfs:label rdf:datatype="&xsd;string">compliance code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#compressionGenerationQuantity -->
+
+    <owl:DatatypeProperty rdf:about="&md;compressionGenerationQuantity">
+        <rdfs:label rdf:datatype="&xsd;string">compression generation quantity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#condition -->
+
+    <owl:DatatypeProperty rdf:about="&md;condition">
+        <rdfs:label rdf:datatype="&xsd;string">condition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#constraintLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&md;constraintLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">constraint language</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#controlPointAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;controlPointAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">control point availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#credit -->
+
+    <owl:DatatypeProperty rdf:about="&md;credit">
+        <rdfs:label rdf:datatype="&xsd;string">credit</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dataSet -->
+
+    <owl:DatatypeProperty rdf:about="&md;dataSet">
+        <rdfs:label rdf:datatype="&xsd;string">data set</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dateOfNextUpdate -->
+
+    <owl:DatatypeProperty rdf:about="&md;dateOfNextUpdate">
+        <rdfs:label rdf:datatype="&xsd;string">date of next update</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dateStamp -->
+
+    <owl:DatatypeProperty rdf:about="&md;dateStamp">
+        <rdfs:label rdf:datatype="&xsd;string">date stamp</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#definition -->
+
+    <owl:DatatypeProperty rdf:about="&md;definition">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#denominator -->
+
+    <owl:DatatypeProperty rdf:about="&md;denominator">
+        <rdfs:label rdf:datatype="&xsd;string">denominator</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#density -->
+
+    <owl:DatatypeProperty rdf:about="&md;density">
+        <rdfs:label rdf:datatype="&xsd;string">density</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#densityUnits -->
+
+    <owl:DatatypeProperty rdf:about="&md;densityUnits">
+        <rdfs:label rdf:datatype="&xsd;string">density units</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#descriptor -->
+
+    <owl:DatatypeProperty rdf:about="&md;descriptor">
+        <rdfs:label rdf:datatype="&xsd;string">descriptor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#dimensionSize -->
+
+    <owl:DatatypeProperty rdf:about="&md;dimensionSize">
+        <rdfs:label rdf:datatype="&xsd;string">dimension size</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#domainCode -->
+
+    <owl:DatatypeProperty rdf:about="&md;domainCode">
+        <rdfs:label rdf:datatype="&xsd;string">domain code</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#domainValue -->
+
+    <owl:DatatypeProperty rdf:about="&md;domainValue">
+        <rdfs:label rdf:datatype="&xsd;string">domain value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#environmentDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;environmentDescription">
+        <rdfs:label rdf:datatype="&xsd;string">environment description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fees -->
+
+    <owl:DatatypeProperty rdf:about="&md;fees">
+        <rdfs:label rdf:datatype="&xsd;string">fees</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fileDecompressionTechnique -->
+
+    <owl:DatatypeProperty rdf:about="&md;fileDecompressionTechnique">
+        <rdfs:label rdf:datatype="&xsd;string">file decompression technique</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fileDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;fileDescription">
+        <rdfs:label rdf:datatype="&xsd;string">file description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fileIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="&md;fileIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">file identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fileName -->
+
+    <owl:DatatypeProperty rdf:about="&md;fileName">
+        <rdfs:label rdf:datatype="&xsd;string">file name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#fileType -->
+
+    <owl:DatatypeProperty rdf:about="&md;fileType">
+        <rdfs:label rdf:datatype="&xsd;string">file type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#filmDistortionInformationAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;filmDistortionInformationAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">film distortion information availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#geometricObjectCount -->
+
+    <owl:DatatypeProperty rdf:about="&md;geometricObjectCount">
+        <rdfs:label rdf:datatype="&xsd;string">geometric object count</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#handlingDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;handlingDescription">
+        <rdfs:label rdf:datatype="&xsd;string">handling description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#hierarchyLevelName -->
+
+    <owl:DatatypeProperty rdf:about="&md;hierarchyLevelName">
+        <rdfs:label rdf:datatype="&xsd;string">hierarchy level name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#illuminationAzimuthAngle -->
+
+    <owl:DatatypeProperty rdf:about="&md;illuminationAzimuthAngle">
+        <rdfs:label rdf:datatype="&xsd;string">illumination Azimuth Angle</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#illuminationElevationAngle -->
+
+    <owl:DatatypeProperty rdf:about="&md;illuminationElevationAngle">
+        <rdfs:label rdf:datatype="&xsd;string">illumination elevation Angle</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#includedWithDataset -->
+
+    <owl:DatatypeProperty rdf:about="&md;includedWithDataset">
+        <rdfs:label rdf:datatype="&xsd;string">included with dataset</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#keyword -->
+
+    <owl:DatatypeProperty rdf:about="&md;keyword">
+        <rdfs:label rdf:datatype="&xsd;string">keyword</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#language -->
+
+    <owl:DatatypeProperty rdf:about="&md;language">
+        <rdfs:label rdf:datatype="&xsd;string">language</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#lensDistortionInformationAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;lensDistortionInformationAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">lens distortion information availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#maintenanceNote -->
+
+    <owl:DatatypeProperty rdf:about="&md;maintenanceNote">
+        <rdfs:label rdf:datatype="&xsd;string">maintenance note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#maxValue -->
+
+    <owl:DatatypeProperty rdf:about="&md;maxValue">
+        <rdfs:label rdf:datatype="&xsd;string">max value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#maximumOccurrence -->
+
+    <owl:DatatypeProperty rdf:about="&md;maximumOccurrence">
+        <rdfs:label rdf:datatype="&xsd;string">maximum occurrence</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#mediumNote -->
+
+    <owl:DatatypeProperty rdf:about="&md;mediumNote">
+        <rdfs:label rdf:datatype="&xsd;string">medium note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#metadataStandardName -->
+
+    <owl:DatatypeProperty rdf:about="&md;metadataStandardName">
+        <rdfs:label rdf:datatype="&xsd;string">metadata standard name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#metadataStandardVersion -->
+
+    <owl:DatatypeProperty rdf:about="&md;metadataStandardVersion">
+        <rdfs:label rdf:datatype="&xsd;string">metadata standard version</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#minValue -->
+
+    <owl:DatatypeProperty rdf:about="&md;minValue">
+        <rdfs:label rdf:datatype="&xsd;string">min value</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#name -->
+
+    <owl:DatatypeProperty rdf:about="&md;name">
+        <rdfs:label rdf:datatype="&xsd;string">name</rdfs:label>
+        <rdfs:range rdf:resource="&basic;CharacterString"/>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#numberOfDimensions -->
+
+    <owl:DatatypeProperty rdf:about="&md;numberOfDimensions">
+        <rdfs:label rdf:datatype="&xsd;string">number of dimensions</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#obligation -->
+
+    <owl:DatatypeProperty rdf:about="&md;obligation">
+        <rdfs:label rdf:datatype="&xsd;string">obligation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&md;ObligationCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#offset -->
+
+    <owl:DatatypeProperty rdf:about="&md;offset">
+        <rdfs:label rdf:datatype="&xsd;string">offset</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#orderingInstructions -->
+
+    <owl:DatatypeProperty rdf:about="&md;orderingInstructions">
+        <rdfs:label rdf:datatype="&xsd;string">ordering instructions</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#orientationParameterAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;orientationParameterAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">orientation parameter availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#orientationParameterDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;orientationParameterDescription">
+        <rdfs:label rdf:datatype="&xsd;string">orientation parameter description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#otherConstraints -->
+
+    <owl:DatatypeProperty rdf:about="&md;otherConstraints">
+        <rdfs:label rdf:datatype="&xsd;string">other constraints</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#parentEntity -->
+
+    <owl:DatatypeProperty rdf:about="&md;parentEntity">
+        <rdfs:label rdf:datatype="&xsd;string">parent entity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#parentIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="&md;parentIdentifier">
+        <rdfs:label rdf:datatype="&xsd;string">parent identifier</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#peakResponse -->
+
+    <owl:DatatypeProperty rdf:about="&md;peakResponse">
+        <rdfs:label rdf:datatype="&xsd;string">peak response</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#plannedAvailableDateTime -->
+
+    <owl:DatatypeProperty rdf:about="&md;plannedAvailableDateTime">
+        <rdfs:label rdf:datatype="&xsd;string">planned available date time</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#pointInPixel -->
+
+    <owl:DatatypeProperty rdf:about="&md;pointInPixel">
+        <rdfs:label rdf:datatype="&xsd;string">point in pixel</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&md;PixelOrientationCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#purpose -->
+
+    <owl:DatatypeProperty rdf:about="&md;purpose">
+        <rdfs:label rdf:datatype="&xsd;string">purpose</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#radiometricCalibrationInformationAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;radiometricCalibrationInformationAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">radiometric calibration information availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#rationale -->
+
+    <owl:DatatypeProperty rdf:about="&md;rationale">
+        <rdfs:label rdf:datatype="&xsd;string">rationale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#rule -->
+
+    <owl:DatatypeProperty rdf:about="&md;rule">
+        <rdfs:label rdf:datatype="&xsd;string">rule</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#scaleFactor -->
+
+    <owl:DatatypeProperty rdf:about="&md;scaleFactor">
+        <rdfs:label rdf:datatype="&xsd;string">scale factor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#schemaAscii -->
+
+    <owl:DatatypeProperty rdf:about="&md;schemaAscii">
+        <rdfs:label rdf:datatype="&xsd;string">schema ascii</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#schemaLanguage -->
+
+    <owl:DatatypeProperty rdf:about="&md;schemaLanguage">
+        <rdfs:label rdf:datatype="&xsd;string">schema language</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#shortName -->
+
+    <owl:DatatypeProperty rdf:about="&md;shortName">
+        <rdfs:label rdf:datatype="&xsd;string">short name</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#softwareDevelopmentFileFormat -->
+
+    <owl:DatatypeProperty rdf:about="&md;softwareDevelopmentFileFormat">
+        <rdfs:label rdf:datatype="&xsd;string">software development file format</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#specificUsage -->
+
+    <owl:DatatypeProperty rdf:about="&md;specificUsage">
+        <rdfs:label rdf:datatype="&xsd;string">specific usage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#specification -->
+
+    <owl:DatatypeProperty rdf:about="&md;specification">
+        <rdfs:label rdf:datatype="&xsd;string">specification</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#supplementalInformation -->
+
+    <owl:DatatypeProperty rdf:about="&md;supplementalInformation">
+        <rdfs:label rdf:datatype="&xsd;string">supplemental information</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#toneGradation -->
+
+    <owl:DatatypeProperty rdf:about="&md;toneGradation">
+        <rdfs:label rdf:datatype="&xsd;string">tone gradation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transferSize -->
+
+    <owl:DatatypeProperty rdf:about="&md;transferSize">
+        <rdfs:label rdf:datatype="&xsd;string">transfer size</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transformationDimensionDescription -->
+
+    <owl:DatatypeProperty rdf:about="&md;transformationDimensionDescription">
+        <rdfs:label rdf:datatype="&xsd;string">transformation dimension description</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transformationDimensionMapping -->
+
+    <owl:DatatypeProperty rdf:about="&md;transformationDimensionMapping">
+        <rdfs:label rdf:datatype="&xsd;string">transformation dimension mapping</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#transformationParameterAvailability -->
+
+    <owl:DatatypeProperty rdf:about="&md;transformationParameterAvailability">
+        <rdfs:label rdf:datatype="&xsd;string">transformation parameter availability</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#triangulationIndicator -->
+
+    <owl:DatatypeProperty rdf:about="&md;triangulationIndicator">
+        <rdfs:label rdf:datatype="&xsd;string">triangulation indicator</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#turnaround -->
+
+    <owl:DatatypeProperty rdf:about="&md;turnaround">
+        <rdfs:label rdf:datatype="&xsd;string">turnaround</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#unitsOfDistribution -->
+
+    <owl:DatatypeProperty rdf:about="&md;unitsOfDistribution">
+        <rdfs:label rdf:datatype="&xsd;string">units of distribution</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#usageDateTime -->
+
+    <owl:DatatypeProperty rdf:about="&md;usageDateTime">
+        <rdfs:label rdf:datatype="&xsd;string">usage date time</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#useLimitation -->
+
+    <owl:DatatypeProperty rdf:about="&md;useLimitation">
+        <rdfs:label rdf:datatype="&xsd;string">use limitation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#userDefinedMaintenanceFrequency -->
+
+    <owl:DatatypeProperty rdf:about="&md;userDefinedMaintenanceFrequency">
+        <rdfs:label rdf:datatype="&xsd;string">user defined maintenance frequency</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;duration"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#userDeterminedLimitations -->
+
+    <owl:DatatypeProperty rdf:about="&md;userDeterminedLimitations">
+        <rdfs:label rdf:datatype="&xsd;string">user determined limitations</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#userNote -->
+
+    <owl:DatatypeProperty rdf:about="&md;userNote">
+        <rdfs:label rdf:datatype="&xsd;string">user note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#version -->
+
+    <owl:DatatypeProperty rdf:about="&md;version">
+        <rdfs:label rdf:datatype="&xsd;string">version</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#volumes -->
+
+    <owl:DatatypeProperty rdf:about="&md;volumes">
+        <rdfs:label rdf:datatype="&xsd;string">volumes</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata -->
+
+    <owl:NamedIndividual rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

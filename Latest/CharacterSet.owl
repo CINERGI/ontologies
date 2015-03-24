@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY char "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:char="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/CharacterSet">
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/CharacterSet.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/CharacterSet.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&char;eucKR">
+        <rdfs:label rdf:datatype="&xsd;string">euc KR</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">euc KR</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;jis">
+        <rdfs:label rdf:datatype="&xsd;string">jis</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">jis</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;usAscii">
+        <rdfs:label rdf:datatype="&xsd;string">us ascii</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">us ascii</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;utf16">
+        <rdfs:label rdf:datatype="&xsd;string">utf16</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">utf16</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part1">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part1</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part1</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;big5">
+        <rdfs:label rdf:datatype="&xsd;string">big 5</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">big 5</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part6">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part6</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part6</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part7">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part7</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part7</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part8">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part8</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part8</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part9">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part9</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part9</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;utf7">
+        <rdfs:label rdf:datatype="&xsd;string">utf7</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">utf7</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part2">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part2</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part2</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part3">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part3</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part3</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part4">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part4</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part4</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;utf8">
+        <rdfs:label rdf:datatype="&xsd;string">utf8</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">utf8</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part5">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part5</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part5</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;GB2312">
+        <rdfs:label rdf:datatype="&xsd;string">GB2312</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">GB2312</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part10">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part10</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part10</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part14">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part14</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part14</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part13">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part13</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part13</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part11">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part11</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part11</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;eucJP">
+        <rdfs:label rdf:datatype="&xsd;string">euc JP</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">euc JP</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;shiftJIS">
+        <rdfs:label rdf:datatype="&xsd;string">shift JIS</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">shift JIS</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;ebcdic">
+        <rdfs:label rdf:datatype="&xsd;string">ebcdic</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">ebcdic</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;ucs2">
+        <rdfs:label rdf:datatype="&xsd;string">ucs2</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">ucs2</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;ucs4">
+        <rdfs:label rdf:datatype="&xsd;string">ucs4</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">ucs4</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part15">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part15</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part15</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&char;part16">
+        <rdfs:label rdf:datatype="&xsd;string">8859 part16</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8859 part16</skos:prefLabel>
+        <skos:inScheme rdf:resource="&char;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

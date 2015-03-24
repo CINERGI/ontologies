@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ci "http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#" >
+    <!ENTITY datetype "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ci="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:datetype="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/DateType.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/DateType.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;hasPart"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&datetype;creation">
+        <rdfs:label rdf:datatype="&xsd;string">creation</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">creation</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&datetype;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&datetype;publication">
+        <rdfs:label rdf:datatype="&xsd;string">publication</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">publication</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&datetype;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&datetype;scheme">
+        <rdfs:label rdf:datatype="&xsd;string">Date type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="&datetype;revision">
+        <rdfs:label rdf:datatype="&xsd;string">revision</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">revision</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation"/>
+        <skos:inScheme rdf:resource="&datetype;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation">
+        <dcterms:hasPart rdf:resource="&datetype;creation"/>
+        <dcterms:hasPart rdf:resource="&datetype;publication"/>
+        <dcterms:hasPart rdf:resource="&datetype;revision"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/">
+        <rdfs:label rdf:datatype="&xsd;string">date type codes</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">date type codes</skos:prefLabel>
+        <skos:member rdf:resource="&datetype;creation"/>
+        <skos:member rdf:resource="&datetype;publication"/>
+        <skos:member rdf:resource="&datetype;revision"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

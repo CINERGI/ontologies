@@ -1,0 +1,2595 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY void "http://rdfs.org/ns/void#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY basic "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:cc="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic">
+        <dct:created rdf:datatype="&xsd;dateTime">2011-01-01T00:00:00</dct:created>
+        <dct:modified rdf:datatype="&xsd;dateTime">2013-11-14T00:00:00</dct:modified>
+        <dc:description rdf:datatype="&xsd;string">An OWL representation of (some of) the basic types described in ISO 19103:2005, required as primitives in other ontologies based on ISO 19100 series standards. </dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">An OWL representation of (some of) the basic types described in ISO 19103:2005, required as primitives in other ontologies based on ISO 19100 series standards. 
+
+This vocabulary is provisional, pending finalization of ISO 19150-2.
+
+The URI stem http://def.seegrid.csiro.au/isotc211/ is temporary. The vocabulary is expected to be ultimately published in the domain http://def.isotc211.org/</rdfs:comment>
+        <dc:rights rdf:datatype="&xsd;string">Copyright © 2012-2013 CSIRO</dc:rights>
+        <dc:source rdf:datatype="&xsd;string">ISO 19103:2005</dc:source>
+        <dc:title rdf:datatype="&xsd;string">OWL representation of ISO 19103 (Basic types package)</dc:title>
+        <dc:creator rdf:datatype="&xsd;string">Simon Jonathan David COX, CSIRO Australia</dc:creator>
+        <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">basic</vann:preferredNamespacePrefix>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <vann:preferredNamespaceUri rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"/>
+        <dct:hasPart rdf:resource="&basic;Acceleration"/>
+        <dct:hasPart rdf:resource="&basic;Angle"/>
+        <dct:hasPart rdf:resource="&basic;AngularVelocity"/>
+        <dct:hasPart rdf:resource="&basic;Area"/>
+        <dct:hasPart rdf:resource="&basic;Boolean"/>
+        <dct:hasPart rdf:resource="&basic;CharacterString"/>
+        <dct:hasPart rdf:resource="&basic;Currency"/>
+        <dct:hasPart rdf:resource="&basic;Date"/>
+        <dct:hasPart rdf:resource="&basic;DateTime"/>
+        <dct:hasPart rdf:resource="&basic;Decimal"/>
+        <dct:hasPart rdf:resource="&basic;Distance"/>
+        <dct:hasPart rdf:resource="&basic;Integer"/>
+        <dct:hasPart rdf:resource="&basic;Length"/>
+        <dct:hasPart rdf:resource="&basic;LocalName"/>
+        <dct:hasPart rdf:resource="&basic;Mass"/>
+        <dct:hasPart rdf:resource="&basic;Measure"/>
+        <dct:hasPart rdf:resource="&basic;Number"/>
+        <dct:hasPart rdf:resource="&basic;Real"/>
+        <dct:hasPart rdf:resource="&basic;Scale"/>
+        <dct:hasPart rdf:resource="&basic;Time"/>
+        <dct:hasPart rdf:resource="&basic;UnitOfMeasure"/>
+        <dct:hasPart rdf:resource="&basic;Vector"/>
+        <dct:hasPart rdf:resource="&basic;Velocity"/>
+        <dct:hasPart rdf:resource="&basic;Volume"/>
+        <dct:hasPart rdf:resource="&basic;Weight"/>
+        <dct:hasPart rdf:resource="&basic;dimension"/>
+        <dct:hasPart rdf:resource="&basic;measure"/>
+        <dct:hasPart rdf:resource="&basic;ordinates"/>
+        <dct:hasPart rdf:resource="&basic;uom"/>
+        <dct:hasPart rdf:resource="&basic;value"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/basic.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201311/ISOTC211/HM/basic.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+    <owl:AnnotationProperty rdf:about="&dc;coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="&dc;relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dc;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="&dc;subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="&dc;type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="&dct;abstract">
+        <rdfs:label xml:lang="en">Abstract</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A summary of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#abstract-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <owl:AnnotationProperty rdf:about="&dct;accessRights">
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2003-02-15</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</dct:description>
+        <rdfs:comment xml:lang="en">Information about who can access the resource or an indication of its security status.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accessRights-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualMethod -->
+
+    <owl:AnnotationProperty rdf:about="&dct;accrualMethod">
+        <rdfs:label xml:lang="en">Accrual Method</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The method by which items are added to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualMethod-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="&dct;accrualPeriodicity">
+        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPeriodicity-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPolicy -->
+
+    <owl:AnnotationProperty rdf:about="&dct;accrualPolicy">
+        <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPolicy-003"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="&dct;alternative">
+        <rdfs:label xml:lang="en">Alternative Title</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
+        <dct:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#alternative-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;title"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:AnnotationProperty rdf:about="&dct;available">
+        <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#available-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="&dct;bibliographicCitation">
+        <rdfs:label xml:lang="en">Bibliographic Citation</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2003-02-15</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A bibliographic reference for the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#bibliographicCitation-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;identifier"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:domain rdf:resource="&dct;BibliographicResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:AnnotationProperty rdf:about="&dct;conformsTo">
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2001-05-21</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#conformsTo-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dct;contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributorT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;contributor"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:AnnotationProperty rdf:about="&dct;coverage">
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</dct:description>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverageT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="&dct;created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dct;creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;creator"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="&dct;date">
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:AnnotationProperty rdf:about="&dct;dateAccepted">
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateAccepted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:AnnotationProperty rdf:about="&dct;dateCopyrighted">
+        <rdfs:label xml:lang="en">Date Copyrighted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:AnnotationProperty rdf:about="&dct;dateSubmitted">
+        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&dct;description">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#descriptionT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/educationLevel -->
+
+    <owl:AnnotationProperty rdf:about="&dct;educationLevel">
+        <rdfs:label xml:lang="en">Audience Education Level</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#educationLevel-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/extent -->
+
+    <owl:AnnotationProperty rdf:about="&dct;extent">
+        <rdfs:label xml:lang="en">Extent</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The size or duration of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#extent-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="&dct;format">
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</dct:description>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#formatT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="&dct;hasFormat">
+        <rdfs:label xml:lang="en">Has Format</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is substantially the same as the pre-existing described resource, but in another format.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasFormat-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="&dct;hasPart">
+        <rdfs:label xml:lang="en">Has Part</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasPart-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="&dct;hasVersion">
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasVersion-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="&dct;identifier">
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifierT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;identifier"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isFormatOf -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isFormatOf">
+        <rdfs:label xml:lang="en">Is Format Of</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is substantially the same as the described resource, but in another format.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isFormatOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isPartOf">
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isReferencedBy">
+        <rdfs:label xml:lang="en">Is Referenced By</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReferencedBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isReplacedBy">
+        <rdfs:label xml:lang="en">Is Replaced By</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that supplants, displaces, or supersedes the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isReplacedBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isRequiredBy -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isRequiredBy">
+        <rdfs:label xml:lang="en">Is Required By</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that requires the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isRequiredBy-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="&dct;isVersionOf">
+        <rdfs:label xml:lang="en">Is Version Of</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource of which the described resource is a version, edition, or adaptation.</rdfs:comment>
+        <dct:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format.</dct:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isVersionOf-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="&dct;issued">
+        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="&dct;language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#languageT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;language"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="&dct;license">
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2004-06-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#license-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/mediator -->
+
+    <owl:AnnotationProperty rdf:about="&dct;mediator">
+        <rdfs:label xml:lang="en">Mediator</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2001-05-21</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An entity that mediates access to the resource and for whom the resource is intended or useful.</rdfs:comment>
+        <dct:description xml:lang="en">In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#mediator-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/medium -->
+
+    <owl:AnnotationProperty rdf:about="&dct;medium">
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The material or physical carrier of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#medium-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;format"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="&dct;modified">
+        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="&dct;publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisherT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;publisher"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="&dct;references">
+        <rdfs:label xml:lang="en">References</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#references-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:AnnotationProperty rdf:about="&dct;relation">
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </dct:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relationT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="&dct;replaces">
+        <rdfs:label xml:lang="en">Replaces</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is supplanted, displaced, or superseded by the described resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#replaces-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <owl:AnnotationProperty rdf:about="&dct;requires">
+        <rdfs:label xml:lang="en">Requires</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource that is required by the described resource to support its function, delivery, or coherence.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#requires-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;relation"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="&dct;rights">
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rightsT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;rights"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="&dct;source">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <dct:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</dct:description>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#sourceT-001"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;source"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:AnnotationProperty rdf:about="&dct;spatial">
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#spatial-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="&dct;subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2012-06-14</dct:modified>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <dct:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subjectT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;subject"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/tableOfContents -->
+
+    <owl:AnnotationProperty rdf:about="&dct;tableOfContents">
+        <rdfs:label xml:lang="en">Table Of Contents</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A list of subunits of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#tableOfContents-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;description"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:AnnotationProperty rdf:about="&dct;temporal">
+        <rdfs:label xml:lang="en">Temporal Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#temporal-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;coverage"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&dct;title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#titleT-002"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;title"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="&dct;type">
+        <rdfs:subPropertyOf rdf:resource="&dc;type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <owl:AnnotationProperty rdf:about="&dct;valid">
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:subPropertyOf rdf:resource="&dc;date"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Boolean -->
+
+    <rdfs:Datatype rdf:about="&basic;Boolean">
+        <rdfs:label rdf:datatype="&xsd;string">boolean</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;boolean"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Truth value. Most valuable in the predicate calculus, where items are either True or False, unless they are ill formed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#CharacterString -->
+
+    <rdfs:Datatype rdf:about="&basic;CharacterString">
+        <rdfs:label rdf:datatype="&xsd;string">characterString</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;string"/>
+        <rdfs:comment rdf:datatype="&xsd;string">sequence of characters</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Date -->
+
+    <rdfs:Datatype rdf:about="&basic;Date">
+        <rdfs:label rdf:datatype="&xsd;string">date</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;date"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Temporal position expressed with precision of days</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#DateTime -->
+
+    <rdfs:Datatype rdf:about="&basic;DateTime">
+        <rdfs:label rdf:datatype="&xsd;string">dateTime</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;dateTime"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Temporal position expressed as a time and date</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Decimal -->
+
+    <rdfs:Datatype rdf:about="&basic;Decimal">
+        <rdfs:label rdf:datatype="&xsd;string">decimal</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;decimal"/>
+        <rdfs:comment rdf:datatype="&xsd;string">The usually finite representation of a decimal number. It differs from the common binary Real implementation in that it can represent 1/10 (one-tenth) without error, while binary real representation can only represent powers of 1/2 (one-half) exactly. Since many currencies are decimal, these representations are preferred in dealing with such moneys. This is also true for mile markers, which are often given in decimals.
+
+Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/10 (tenths).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#ISOClassName -->
+
+    <rdfs:Datatype rdf:about="&basic;ISOClassName"/>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Integer -->
+
+    <rdfs:Datatype rdf:about="&basic;Integer">
+        <rdfs:label rdf:datatype="&xsd;string">integer</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;integer"/>
+        <rdfs:comment rdf:datatype="&xsd;string">An exact integer value, with no fractional part. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#LocalName -->
+
+    <rdfs:Datatype rdf:about="&basic;LocalName">
+        <rdfs:label rdf:datatype="&xsd;string">localName</rdfs:label>
+        <owl:equivalentClass rdf:resource="&xsd;NCName"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Name in some local context</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Number -->
+
+    <rdfs:Datatype rdf:about="&basic;Number">
+        <rdfs:label rdf:datatype="&xsd;string">Number</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Note: integer is a specialization of decimal</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">The set of numbers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Real -->
+
+    <rdfs:Datatype rdf:about="&basic;Real">
+        <rdfs:label rdf:datatype="&xsd;string">realNumber</rdfs:label>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;double"/>
+                    <rdf:Description rdf:about="&xsd;float"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="&xsd;string">The common binary Real finite implementation using base 2. Since such reals can approximate any measure where absolute accuracy is not possible, this form of numeric is most often used for measures. In cases were absolute accuracy is needed, such as currencies, then a decimal representation may be preferred (assuming the currency is decimal, such as the US dollar, British pound, etc.). Where there are no subunits possible, Integer numbers may be preferred.  
+
+Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/2 (halves).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/Box -->
+
+    <rdfs:Datatype rdf:about="&dct;Box">
+        <rdfs:label xml:lang="en">DCMI Box</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-box/"/>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Box-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO3166 -->
+
+    <rdfs:Datatype rdf:about="&dct;ISO3166">
+        <rdfs:label xml:lang="en">ISO 3166</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of codes listed in ISO 3166-1 for the representation of names of countries.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO3166-004"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-2 -->
+
+    <rdfs:Datatype rdf:about="&dct;ISO639-2">
+        <rdfs:label xml:lang="en">ISO 639-2</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO639-2-003"/>
+        <rdfs:seeAlso rdf:resource="http://lcweb.loc.gov/standards/iso639-2/langhome.html"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-3 -->
+
+    <rdfs:Datatype rdf:about="&dct;ISO639-3">
+        <rdfs:label xml:lang="en">ISO 639-3</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ISO639-3-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.sil.org/iso639-3/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/Period -->
+
+    <rdfs:Datatype rdf:about="&dct;Period">
+        <rdfs:label xml:lang="en">DCMI Period</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-period/"/>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Period-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/Point -->
+
+    <rdfs:Datatype rdf:about="&dct;Point">
+        <rdfs:label xml:lang="en">DCMI Point</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://dublincore.org/documents/dcmi-point/"/>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Point-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC1766 -->
+
+    <rdfs:Datatype rdf:about="&dct;RFC1766">
+        <rdfs:label xml:lang="en">RFC 1766</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of tags, constructed according to RFC 1766, for the identification of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC1766-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc1766.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC3066 -->
+
+    <rdfs:Datatype rdf:about="&dct;RFC3066">
+        <rdfs:label xml:lang="en">RFC 3066</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">RFC 3066 has been obsoleted by RFC 4646.</dct:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 3066 for the identification of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC3066-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3066.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC4646 -->
+
+    <rdfs:Datatype rdf:about="&dct;RFC4646">
+        <rdfs:label xml:lang="en">RFC 4646</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:description xml:lang="en">RFC 4646 obsoletes RFC 3066.</dct:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 4646 for the identification of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC4646-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC5646 -->
+
+    <rdfs:Datatype rdf:about="&dct;RFC5646">
+        <rdfs:label xml:lang="en">RFC 5646</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2010-10-11</dct:issued>
+        <dct:description xml:lang="en">RFC 5646 obsoletes RFC 4646.</dct:description>
+        <rdfs:comment xml:lang="en">The set of tags constructed according to RFC 5646 for the identification of languages.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RFC5646-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc5646.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/URI -->
+
+    <rdfs:Datatype rdf:about="&dct;URI">
+        <rdfs:label xml:lang="en">URI</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#URI-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc3986.txt"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.org/dc/terms/W3CDTF -->
+
+    <rdfs:Datatype rdf:about="&dct;W3CDTF">
+        <rdfs:label xml:lang="en">W3C-DTF</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of dates and times constructed according to the W3C Date and Time Formats Specification.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#W3CDTF-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/NOTE-datetime"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#measure -->
+
+    <owl:ObjectProperty rdf:about="&basic;measure">
+        <rdfs:label rdf:datatype="&xsd;string">measure</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property is a scaled number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <rdfs:range rdf:resource="&basic;Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#uom -->
+
+    <owl:ObjectProperty rdf:about="&basic;uom">
+        <rdfs:label rdf:datatype="&xsd;string">unit of measure</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">The value of this property designates the units of measure or scale for the quantity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <rdfs:range rdf:resource="&basic;UnitOfMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <owl:ObjectProperty rdf:about="&dct;accessRights">
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2003-02-15</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</dct:description>
+        <rdfs:comment xml:lang="en">Information about who can access the resource or an indication of its security status.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accessRights-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;RightsStatement"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualMethod -->
+
+    <owl:ObjectProperty rdf:about="&dct;accrualMethod">
+        <rdfs:label xml:lang="en">Accrual Method</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The method by which items are added to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualMethod-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;MethodOfAccrual"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:ObjectProperty rdf:about="&dct;accrualPeriodicity">
+        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPeriodicity-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPolicy -->
+
+    <owl:ObjectProperty rdf:about="&dct;accrualPolicy">
+        <rdfs:label xml:lang="en">Accrual Policy</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">The policy governing the addition of items to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#accrualPolicy-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/audience -->
+
+    <owl:ObjectProperty rdf:about="&dct;audience">
+        <rdfs:label xml:lang="en">Audience</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2001-05-21</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A class of entity for whom the resource is intended or useful.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#audience-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:ObjectProperty rdf:about="&dct;conformsTo">
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2001-05-21</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#conformsTo-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Standard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="&dct;contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributorT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:ObjectProperty rdf:about="&dct;coverage">
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</dct:description>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverageT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;LocationPeriodOrJurisdiction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="&dct;creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Agent"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/educationLevel -->
+
+    <owl:ObjectProperty rdf:about="&dct;educationLevel">
+        <rdfs:label xml:lang="en">Audience Education Level</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#educationLevel-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;audience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/extent -->
+
+    <owl:ObjectProperty rdf:about="&dct;extent">
+        <rdfs:label xml:lang="en">Extent</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The size or duration of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#extent-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;SizeOrDuration"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:ObjectProperty rdf:about="&dct;format">
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:description xml:lang="en">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</dct:description>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#formatT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;MediaTypeOrExtent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/instructionalMethod -->
+
+    <owl:ObjectProperty rdf:about="&dct;instructionalMethod">
+        <rdfs:label xml:lang="en">Instructional Method</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.</rdfs:comment>
+        <dct:description xml:lang="en">Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#instructionalMethod-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;MethodOfInstruction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:ObjectProperty rdf:about="&dct;language">
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#languageT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;LinguisticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:ObjectProperty rdf:about="&dct;license">
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2004-06-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#license-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;LicenseDocument"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/mediator -->
+
+    <owl:ObjectProperty rdf:about="&dct;mediator">
+        <rdfs:label xml:lang="en">Mediator</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2001-05-21</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An entity that mediates access to the resource and for whom the resource is intended or useful.</rdfs:comment>
+        <dct:description xml:lang="en">In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#mediator-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;audience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/medium -->
+
+    <owl:ObjectProperty rdf:about="&dct;medium">
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The material or physical carrier of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#medium-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;PhysicalMedium"/>
+        <rdfs:domain rdf:resource="&dct;PhysicalResource"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/provenance -->
+
+    <owl:ObjectProperty rdf:about="&dct;provenance">
+        <rdfs:label xml:lang="en">Provenance</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2004-09-20</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>
+        <dct:description xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#provenance-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;ProvenanceStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:ObjectProperty rdf:about="&dct;publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisherT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:ObjectProperty rdf:about="&dct;rights">
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rightsT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;RightsStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:ObjectProperty rdf:about="&dct;rightsHolder">
+        <rdfs:label xml:lang="en">Rights Holder</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2004-06-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A person or organization owning or managing rights over the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rightsHolder-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:ObjectProperty rdf:about="&dct;spatial">
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#spatial-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;Location"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;coverage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:ObjectProperty rdf:about="&dct;temporal">
+        <rdfs:label xml:lang="en">Temporal Coverage</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#temporal-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&dct;PeriodOfTime"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;coverage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#dimension -->
+
+    <owl:DatatypeProperty rdf:about="&basic;dimension">
+        <rdfs:label rdf:datatype="&xsd;string">dimension</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Number of components in the vector</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <rdfs:domain rdf:resource="&basic;Vector"/>
+        <rdfs:range rdf:resource="&xsd;positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#ordinates -->
+
+    <owl:DatatypeProperty rdf:about="&basic;ordinates">
+        <rdfs:label rdf:datatype="&xsd;string">ordinates</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Numerical values of the vector components</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+        <rdfs:domain rdf:resource="&basic;Vector"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#value -->
+
+    <owl:DatatypeProperty rdf:about="&basic;value">
+        <rdfs:subPropertyOf rdf:resource="&rdf;value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:DatatypeProperty rdf:about="&dct;alternative">
+        <rdfs:label xml:lang="en">Alternative Title</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">An alternative name for the resource.</rdfs:comment>
+        <dct:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#alternative-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;title"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:DatatypeProperty rdf:about="&dct;available">
+        <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) that the resource became or will become available.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#available-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:DatatypeProperty rdf:about="&dct;bibliographicCitation">
+        <rdfs:label xml:lang="en">Bibliographic Citation</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2003-02-15</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A bibliographic reference for the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#bibliographicCitation-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;identifier"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="&dct;created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="&dct;date">
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:DatatypeProperty rdf:about="&dct;dateAccepted">
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateAccepted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:DatatypeProperty rdf:about="&dct;dateCopyrighted">
+        <rdfs:label xml:lang="en">Date Copyrighted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of copyright.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateCopyrighted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:DatatypeProperty rdf:about="&dct;dateSubmitted">
+        <rdfs:label xml:lang="en">Date Submitted</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2002-07-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of submission of the resource.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#dateSubmitted-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="&dct;identifier">
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <dct:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifierT-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:DatatypeProperty rdf:about="&dct;issued">
+        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:DatatypeProperty rdf:about="&dct;modified">
+        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="&dct;title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2010-10-11</dct:modified>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#titleT-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <owl:DatatypeProperty rdf:about="&dct;valid">
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#valid-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:subPropertyOf rdf:resource="&dct;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Acceleration -->
+
+    <owl:Class rdf:about="&basic;Acceleration">
+        <rdfs:label xml:lang="en">Acceleration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of rate of change of velocity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Angle -->
+
+    <owl:Class rdf:about="&basic;Angle">
+        <rdfs:label>Angle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">measure of arc length or rotation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#AngularVelocity -->
+
+    <owl:Class rdf:about="&basic;AngularVelocity">
+        <rdfs:label rdf:datatype="&xsd;string">AngularVelocity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of rate of change of angular position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Area -->
+
+    <owl:Class rdf:about="&basic;Area">
+        <rdfs:label>Area</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of 2-D extent</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Currency -->
+
+    <owl:Class rdf:about="&basic;Currency">
+        <rdfs:label>Currency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of exchange value</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Distance -->
+
+    <owl:Class rdf:about="&basic;Distance">
+        <rdfs:label>Distance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Length"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of spatial separation along some 1-D manifold</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Length -->
+
+    <owl:Class rdf:about="&basic;Length">
+        <rdfs:label>Length</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of 1-D extent</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Mass -->
+
+    <owl:Class rdf:about="&basic;Mass">
+        <rdfs:label>Mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of amount of substance</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Measure -->
+
+    <owl:Class rdf:about="&basic;Measure">
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+        <rdfs:label xml:lang="fr">Mesure</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basic;value"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basic;uom"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&basic;UnitOfMeasure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Scaled number</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Number -->
+
+    <owl:Class rdf:about="&basic;Number">
+        <rdfs:label rdf:datatype="&xsd;string">Number</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;decimal"/>
+                    <rdf:Description rdf:about="&xsd;double"/>
+                    <rdf:Description rdf:about="&xsd;float"/>
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="&xsd;string">Note: integer is a specialization of decimal</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">The set of numbers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Scale -->
+
+    <owl:Class rdf:about="&basic;Scale">
+        <rdfs:label>Scale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Factor by which a representation should be magnified to match the geomstric size of the thing it represents.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Time -->
+
+    <owl:Class rdf:about="&basic;Time">
+        <rdfs:label>Time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of temporal extent</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#UnitOfMeasure -->
+
+    <owl:Class rdf:about="&basic;UnitOfMeasure">
+        <rdfs:label rdf:datatype="&xsd;string">Unit of measure</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Scale for a number describing size or extent</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Vector -->
+
+    <owl:Class rdf:about="&basic;Vector">
+        <rdfs:label rdf:datatype="&xsd;string">Vector</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basic;dimension"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basic;ordinates"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">A vector is a sequence of a fixed length of Numbers. Normally, the numbers represent some measures, and thus vectors are often used where records of Numbers would be more appropriate. In geometry for example, direct positions are given by undistinguished coordinate vectors, which can be interpreted through the use of coordinate reference systems.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Velocity -->
+
+    <owl:Class rdf:about="&basic;Velocity">
+        <rdfs:label>Velocity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of rate of change of position</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Volume -->
+
+    <owl:Class rdf:about="&basic;Volume">
+        <rdfs:label>Volume</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of 3-D extent</rdfs:comment>
+        <skos:notation rdf:datatype="&basic;ISOClassName">Volume</skos:notation>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Weight -->
+
+    <owl:Class rdf:about="&basic;Weight">
+        <rdfs:label>Weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&basic;Measure"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Measure of force due to a mass in a specific gravitational field</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcam/VocabularyEncodingScheme -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="&dct;Agent">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
+        <dct:description xml:lang="en">Examples of Agent include person, organization, and software agent.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Agent-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/BibliographicResource -->
+
+    <owl:Class rdf:about="&dct;BibliographicResource">
+        <rdfs:label xml:lang="en">Bibliographic Resource</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A book, article, or other documentary resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#BibliographicResource-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/FileFormat -->
+
+    <owl:Class rdf:about="&dct;FileFormat">
+        <rdfs:label xml:lang="en">File Format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;MediaType"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A digital resource format.</rdfs:comment>
+        <dct:description xml:lang="en">Examples include the formats defined by the list of Internet Media Types.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#FileFormat-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Frequency -->
+
+    <owl:Class rdf:about="&dct;Frequency">
+        <rdfs:label xml:lang="en">Frequency</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A rate at which something recurs.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Frequency-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Jurisdiction -->
+
+    <owl:Class rdf:about="&dct;Jurisdiction">
+        <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;LocationPeriodOrJurisdiction"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">The extent or range of judicial, law enforcement, or other authority.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Jurisdiction-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+    <owl:Class rdf:about="&dct;LicenseDocument">
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;RightsStatement"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a Resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LicenseDocument-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LinguisticSystem -->
+
+    <owl:Class rdf:about="&dct;LinguisticSystem">
+        <rdfs:label xml:lang="en">Linguistic System</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication.</rdfs:comment>
+        <dct:description xml:lang="en">Examples include written, spoken, sign, and computer languages.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LinguisticSystem-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="&dct;Location">
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;LocationPeriodOrJurisdiction"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Location-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LocationPeriodOrJurisdiction -->
+
+    <owl:Class rdf:about="&dct;LocationPeriodOrJurisdiction">
+        <rdfs:label xml:lang="en">Location, Period, or Jurisdiction</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A location, period of time, or jurisdiction.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LocationPeriodOrJurisdiction-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/MediaType -->
+
+    <owl:Class rdf:about="&dct;MediaType">
+        <rdfs:label xml:lang="en">Media Type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;MediaTypeOrExtent"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A file format or physical medium.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MediaType-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/MediaTypeOrExtent -->
+
+    <owl:Class rdf:about="&dct;MediaTypeOrExtent">
+        <rdfs:label xml:lang="en">Media Type or Extent</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A media type or extent.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/MethodOfAccrual -->
+
+    <owl:Class rdf:about="&dct;MethodOfAccrual">
+        <rdfs:label xml:lang="en">Method of Accrual</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A method by which resources are added to a collection.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MethodOfAccrual-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/MethodOfInstruction -->
+
+    <owl:Class rdf:about="&dct;MethodOfInstruction">
+        <rdfs:label xml:lang="en">Method of Instruction</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A process that is used to engender knowledge, attitudes, and skills.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MethodOfInstruction-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="&dct;PeriodOfTime">
+        <rdfs:label xml:lang="en">Period of Time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;LocationPeriodOrJurisdiction"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">An interval of time that is named or defined by its start and end dates.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#PeriodOfTime-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PhysicalMedium -->
+
+    <owl:Class rdf:about="&dct;PhysicalMedium">
+        <rdfs:label xml:lang="en">Physical Medium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;MediaType"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A physical material or carrier.</rdfs:comment>
+        <dct:description xml:lang="en">Examples include paper, canvas, or DVD.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#PhysicalMedium-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PhysicalResource -->
+
+    <owl:Class rdf:about="&dct;PhysicalResource">
+        <rdfs:label xml:lang="en">Physical Resource</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A material thing.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#PhysicalResource-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Policy -->
+
+    <owl:Class rdf:about="&dct;Policy">
+        <rdfs:label xml:lang="en">Policy</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Policy-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/ProvenanceStatement -->
+
+    <owl:Class rdf:about="&dct;ProvenanceStatement">
+        <rdfs:label xml:lang="en">Provenance Statement</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#ProvenanceStatement-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/RightsStatement -->
+
+    <owl:Class rdf:about="&dct;RightsStatement">
+        <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#RightsStatement-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/SizeOrDuration -->
+
+    <owl:Class rdf:about="&dct;SizeOrDuration">
+        <rdfs:label xml:lang="en">Size or Duration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dct;MediaTypeOrExtent"/>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A dimension or extent, or a time taken to play or execute.</rdfs:comment>
+        <dct:description xml:lang="en">Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds.</dct:description>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#SizeOrDuration-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Standard -->
+
+    <owl:Class rdf:about="&dct;Standard">
+        <rdfs:label xml:lang="en">Standard</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2008-01-14</dct:issued>
+        <rdfs:comment xml:lang="en">A basis for comparison; a reference point against which other things can be evaluated.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Standard-001"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+    <owl:Class rdf:about="&xsd;decimal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <owl:Class rdf:about="&xsd;double"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <owl:Class rdf:about="&xsd;float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <owl:Class rdf:about="&xsd;integer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/licenses/by/3.0/ -->
+
+    <owl:NamedIndividual rdf:about="http://creativecommons.org/licenses/by/3.0/"/>
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic -->
+
+    <owl:NamedIndividual rdf:about="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:NamedIndividual rdf:about="&dct;Agent"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/DCMIType -->
+
+    <owl:NamedIndividual rdf:about="&dct;DCMIType">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">DCMI Type Vocabulary</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2012-06-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#DCMIType-005"/>
+        <rdfs:seeAlso rdf:resource="http://purl.org/dc/dcmitype/"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/DDC -->
+
+    <owl:NamedIndividual rdf:about="&dct;DDC">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">DDC</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Dewey Decimal Classification.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#DDC-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.oclc.org/dewey/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/IMT -->
+
+    <owl:NamedIndividual rdf:about="&dct;IMT">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">IMT</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of media types specified by the Internet Assigned Numbers Authority.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#IMT-004"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.iana.org/assignments/media-types/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/LCC -->
+
+    <owl:NamedIndividual rdf:about="&dct;LCC">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">LCC</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Library of Congress Classification.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LCC-003"/>
+        <rdfs:seeAlso rdf:resource="http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/LCSH -->
+
+    <owl:NamedIndividual rdf:about="&dct;LCSH">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">LCSH</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of labeled concepts specified by the Library of Congress Subject Headings.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#LCSH-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/MESH -->
+
+    <owl:NamedIndividual rdf:about="&dct;MESH">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">MeSH</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of labeled concepts specified by the Medical Subject Headings.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#MESH-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/mesh/meshhome.html"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/NLM -->
+
+    <owl:NamedIndividual rdf:about="&dct;NLM">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">NLM</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2005-06-13</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the National Library of Medicine Classification.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#NLM-002"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://wwwcf.nlm.nih.gov/class/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/TGN -->
+
+    <owl:NamedIndividual rdf:about="&dct;TGN">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">TGN</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of places specified by the Getty Thesaurus of Geographic Names.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#TGN-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.getty.edu/research/tools/vocabulary/tgn/index.html"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/UDC -->
+
+    <owl:NamedIndividual rdf:about="&dct;UDC">
+        <rdf:type rdf:resource="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
+        <rdfs:label xml:lang="en">UDC</rdfs:label>
+        <dct:issued rdf:datatype="&xsd;date">2000-07-11</dct:issued>
+        <dct:modified rdf:datatype="&xsd;date">2008-01-14</dct:modified>
+        <rdfs:comment xml:lang="en">The set of conceptual resources specified by the Universal Decimal Classification.</rdfs:comment>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#UDC-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:seeAlso rdf:resource="http://www.udcc.org/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/">
+        <dct:modified rdf:datatype="&xsd;date">2012-06-14</dct:modified>
+        <dct:title xml:lang="en">DCMI Metadata Terms - other</dct:title>
+        <dct:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

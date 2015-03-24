@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY maint "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:maint="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency/"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MaintenanceFrequency">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/MaintenanceFrequency.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/MaintenanceFrequency.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;hasPart"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&maint;unknown">
+        <rdfs:label rdf:datatype="&xsd;string">unknown</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">unknown</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;monthly">
+        <rdfs:label rdf:datatype="&xsd;string">monthly</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">monthly</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;irregular">
+        <rdfs:label rdf:datatype="&xsd;string">irregular</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">irregular</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;continual">
+        <rdfs:label rdf:datatype="&xsd;string">continual</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">continual</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;asNeeded">
+        <rdfs:label rdf:datatype="&xsd;string">as needed</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">as needed</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;daily">
+        <rdfs:label rdf:datatype="&xsd;string">daily</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">daily</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;biannually">
+        <rdfs:label rdf:datatype="&xsd;string">biannually</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">biannually</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;quarterly">
+        <rdfs:label rdf:datatype="&xsd;string">quarterly</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">quarterly</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;notPlanned">
+        <rdfs:label rdf:datatype="&xsd;string">not planned</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">not planned</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;fortnightly">
+        <rdfs:label rdf:datatype="&xsd;string">fortnightly</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">fortnightly</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata">
+        <dcterms:hasPart rdf:resource="&maint;annually"/>
+        <dcterms:hasPart rdf:resource="&maint;asNeeded"/>
+        <dcterms:hasPart rdf:resource="&maint;biannually"/>
+        <dcterms:hasPart rdf:resource="&maint;continual"/>
+        <dcterms:hasPart rdf:resource="&maint;daily"/>
+        <dcterms:hasPart rdf:resource="&maint;fortnightly"/>
+        <dcterms:hasPart rdf:resource="&maint;irregular"/>
+        <dcterms:hasPart rdf:resource="&maint;monthly"/>
+        <dcterms:hasPart rdf:resource="&maint;notPlanned"/>
+        <dcterms:hasPart rdf:resource="&maint;quarterly"/>
+        <dcterms:hasPart rdf:resource="&maint;unknown"/>
+        <dcterms:hasPart rdf:resource="&maint;weekly"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;weekly">
+        <rdfs:label rdf:datatype="&xsd;string">weekly</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">weekly</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&maint;annually">
+        <rdfs:label rdf:datatype="&xsd;string">annually</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">annually</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&maint;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

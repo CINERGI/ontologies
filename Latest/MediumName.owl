@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY md "http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#" >
+    <!ENTITY medium "http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/" >
+]>
+
+
+<rdf:RDF xmlns="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName#"
+     xml:base="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:md="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:medium="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName">
+        <dcterms:created rdf:datatype="&xsd;string">2012-07-01</dcterms:created>
+        <dcterms:modified rdf:datatype="&xsd;string">2012-10-26</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created with TopBraid Composer</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;string">Simon J D COX, CSIRO</dc:creator>
+        <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic"/>
+        <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201210/ISOTC211/HM/19115codes/MediumName.rdf"/>
+        <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/ISOTC211/HM/19115codes/MediumName.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;hasPart"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:AnnotationProperty rdf:about="&skos;member"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/ -->
+
+    <owl:NamedIndividual rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/MediumName/">
+        <rdfs:label rdf:datatype="&xsd;string">medium name codes</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">medium name codes</skos:prefLabel>
+        <skos:member rdf:resource="&medium;cartridge3480"/>
+        <skos:member rdf:resource="&medium;cdRom"/>
+        <skos:member rdf:resource="&medium;digitalLinearTape"/>
+        <skos:member rdf:resource="&medium;dvd"/>
+        <skos:member rdf:resource="&medium;dvdRom"/>
+        <skos:member rdf:resource="&medium;halfInchFloppy"/>
+        <skos:member rdf:resource="&medium;hardcopy"/>
+        <skos:member rdf:resource="&medium;mmCartridgeTape4"/>
+        <skos:member rdf:resource="&medium;onLine"/>
+        <skos:member rdf:resource="&medium;quarterInchCartridgeTape"/>
+        <skos:member rdf:resource="&medium;quarterInchFloppy"/>
+        <skos:member rdf:resource="&medium;satellite"/>
+        <skos:member rdf:resource="&medium;telephoneLink"/>
+        <skos:member rdf:resource="&medium;trackTape7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&medium;cartridge3490">
+        <rdfs:label rdf:datatype="&xsd;string">3490 Cartridge</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">3490 Cartridge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;cartridge3580">
+        <rdfs:label rdf:datatype="&xsd;string">3580 Cartridge</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">3580 Cartridge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;hardcopy">
+        <rdfs:label rdf:datatype="&xsd;string">hardcopy</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">hardcopy</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;telephoneLink">
+        <rdfs:label rdf:datatype="&xsd;string">telephone link</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">telephone link</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;onLine">
+        <rdfs:label rdf:datatype="&xsd;string">on line</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">on line</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;mmCartridgeTape8">
+        <rdfs:label rdf:datatype="&xsd;string">8mm cartridge tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">8mm cartridge tape</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;digitalLinearTape">
+        <rdfs:label rdf:datatype="&xsd;string">digital linear tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">digital linear tape</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;mmCartridgeTape4">
+        <rdfs:label rdf:datatype="&xsd;string">4mm cartridge tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">4mm cartridge tape</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;cartridge3480">
+        <rdfs:label rdf:datatype="&xsd;string">3480 Cartridge</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">3480 Cartridge</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;cdRom">
+        <rdfs:label rdf:datatype="&xsd;string">cd rom</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">cd rom</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;dvdRom">
+        <rdfs:label rdf:datatype="&xsd;string">dvd rom</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">dvd rom</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;dvd">
+        <rdfs:label rdf:datatype="&xsd;string">dvd</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">dvd</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;quarterInchCartridgeTape">
+        <rdfs:label rdf:datatype="&xsd;string">quarter inch cartridge tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">quarter inch cartridge tape</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;trackTape9">
+        <rdfs:label rdf:datatype="&xsd;string">9 track tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">9 track tape</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;quarterInchFloppy">
+        <rdfs:label rdf:datatype="&xsd;string">five and a quarter inch floppy</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">five and a quarter inch floppy</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata">
+        <dcterms:hasPart rdf:resource="&medium;cdRom"/>
+        <dcterms:hasPart rdf:resource="&medium;digitalLinearTape"/>
+        <dcterms:hasPart rdf:resource="&medium;dvd"/>
+        <dcterms:hasPart rdf:resource="&medium;dvdRom"/>
+        <dcterms:hasPart rdf:resource="&medium;hardcopy"/>
+        <dcterms:hasPart rdf:resource="&medium;onLine"/>
+        <dcterms:hasPart rdf:resource="&medium;satellite"/>
+        <dcterms:hasPart rdf:resource="&medium;telephoneLink"/>
+        <dcterms:hasPart rdf:resource="&medium;trackTape7"/>
+        <dcterms:hasPart rdf:resource="&medium;trackTape9"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;trackTape7">
+        <rdfs:label rdf:datatype="&xsd;string">7 track tape</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">7 track tape</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;satellite">
+        <rdfs:label rdf:datatype="&xsd;string">satellite</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">satellite</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19115/2003/metadata"/>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&medium;halfInchFloppy">
+        <rdfs:label rdf:datatype="&xsd;string">three and a half inch floppy</rdfs:label>
+        <skos:prefLabel rdf:datatype="&xsd;string">three and a half inch floppy</skos:prefLabel>
+        <skos:inScheme rdf:resource="&medium;scheme"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
