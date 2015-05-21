@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://hydro10.sdsc.edu/cinergi_ontology/cinergi_categories.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi_categories.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/originator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#featureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Repository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Agricultural_Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Chemistry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C73537"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D006802"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D012984"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D055599"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_64392"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00000191"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00002036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/ENVO_01000267"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/RO_0001015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/NET/c4dm/event.owl#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_000140"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/matrInstrument.owl#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/realm.owl#Geosphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/realm.owl#Hydrosphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vivoweb.org/ontology/core#Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vivoweb.org/ontology/core#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1150&amp;/ocean-processes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=796&amp;/hydrologic-processes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=928&amp;/life-sciences"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Agricultural_Science"/>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl/Chemistry"/>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D006802"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.bioontology.org/ontology/MESH/D055599"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_64392"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/matrInstrument.owl#Instrument"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1150&amp;/ocean-processes"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology"/>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=796&amp;/hydrologic-processes"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=928&amp;/life-sciences"/>
+        <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Period</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Temporal Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/originator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Resource originator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#Observation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#featureOfInterest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Feature of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://hydro10.sdsc.edu/cinergi_ontology/cinergi#namedProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Observed Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://hydro10.sdsc.edu/cinergi_ontology/cinergi.owl#Repository</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C73537</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D006802</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Human activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D012984</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Software resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.bioontology.org/ontology/MESH/D055599</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">chemical process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/BFO_0000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/BFO_0000040</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Material entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_64392</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Biological material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/ENVO_00000063</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Water body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/ENVO_00000191</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Physiographic Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/ENVO_00002036</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Habitat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/ENVO_00010483</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Environmental material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/ENVO_01000267</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/GAZ_00000448</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Geographic location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000100</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000310</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0001015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/NET/c4dm/event.owl#Event</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_000140</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">web service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/matrEquipment.owl#Equipment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/matrInstrument.owl#Instrument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Instrument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/phenCryo.owl#GlacialProcess</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Glacial process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/realm.owl#Geosphere</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Geosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sweet.jpl.nasa.gov/2.3/realm.owl#Hydrosphere</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vivoweb.org/ontology/core#Meeting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Meeting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://vivoweb.org/ontology/core#Project</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ebi.ac.uk/efo/EFO_0002694</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1150&amp;/ocean-processes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ocean process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Science Domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tectonic process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">climate sciences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=796&amp;/hydrologic-processes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hydrologic process</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,1625 @@
+<?xml version="1.0"?>
+<Ontology xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ontologyIRI="http://www.semanticweb.org/agupta/ontologies/2015/1/untitled-ontology-123" xml:base="http://www.semanticweb.org/agupta/ontologies/2015/1/untitled-ontology-123">
+  <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+  <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+  <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+  <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+  <Prefix name="obo2" IRI="http://hydro10.sdsc.edu/cinergi_ontology/ro.owl"/>
+  <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+  <Import>http://hydro10.sdsc.edu/cinergi_ontology/chebi.owl</Import>
+  <Import>http://hydro10.sdsc.edu/cinergi_ontology/ro.owl</Import>
+  <Declaration>
+    <Class IRI="#absorption"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#adsorption"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#knowledge-areas"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="#natural-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1005&amp;/mass-wasting"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=101&amp;/atmospheric-circulation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1027&amp;/metamorphism-geological"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=103&amp;/atmospheric-deposition-chemical-particulate"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1031&amp;/meteorology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1042&amp;/micropaleontology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1047&amp;/migration-organisms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1052&amp;/mineralogy"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=106&amp;/atmospheric-sciences"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1104&amp;/neotectonic-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1139&amp;/nutrient-cycling"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1150&amp;/ocean-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1152&amp;/ocean-sciences"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1158&amp;/ocean-atmosphere-interaction"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1182&amp;/ore-formation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1201&amp;/oxidation-and-reduction"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1210&amp;/paleobotany"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1215&amp;/paleogeography"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1218&amp;/paleoseismology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1252&amp;/petrology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=12539&amp;/alluvial-sedimentation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1267&amp;/physiological-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=12783&amp;/el-nino"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1297&amp;/pollination"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13013&amp;/la-nina"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13253&amp;/rain"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13366&amp;/snow"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1374&amp;/reaction-transport"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1491&amp;/sedimentation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1492&amp;/sedimentology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=150&amp;/bioaccumulation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1510&amp;/seismology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=154&amp;/biodegradation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1549&amp;/soil-chemistry"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1551&amp;/soil-formation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1556&amp;/soil-sciences"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1559&amp;/sorption"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=157&amp;/biogeochemical-cycling"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1591&amp;/stratigraphy"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1611&amp;/structural-geology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1617&amp;/succession-biological"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1653&amp;/tectonophysics"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1700&amp;/tornadoes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=171&amp;/biological-productivity"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1711&amp;/transpiration"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1821&amp;/vertebrate-paleontology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1835&amp;/volcanic-activity"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1838&amp;/volcanic-gas-emission"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1843&amp;/volcanology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1857&amp;/water-chemistry"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1888&amp;/wetland-functions"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=189&amp;/blizzards"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1896&amp;/wind"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=229&amp;/carbon-cycling"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=232&amp;/carbon-sequestration"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=237&amp;/cartography"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=315&amp;/contaminant-transport"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=379&amp;/deformation-geologic"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=387&amp;/desertification"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=391&amp;/diagenesis"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=405&amp;/dispersal-organisms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=42&amp;/algal-blooms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=428&amp;/droughts"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=432&amp;/dust-storms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=444&amp;/earth-tides"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=456&amp;/earthquakes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=461&amp;/ecological-competition"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=465&amp;/economic-geology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=468&amp;/ecosystem-functions"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=516&amp;/erosion"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=526&amp;/eutrophication"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=527&amp;/evaporation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=535&amp;/extinction-and-extirpation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=562&amp;/fire-damage"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=591&amp;/folding-geologic"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=605&amp;/fracture-geologic"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=639&amp;/geochemistry"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=640&amp;/geochronology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=642&amp;/geodesy"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=649&amp;/geography"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=686&amp;/glaciation"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=688&amp;/glaciology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=712&amp;/greenhouse-effect"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=739&amp;/habitat-alteration"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=757&amp;/heat-flow-earth"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=783&amp;/hurricanes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=788&amp;/hydrodynamics"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=796&amp;/hydrologic-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=797&amp;/hydrology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=800&amp;/hydrothermal-processes"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=809&amp;/ice-storms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=818&amp;/impact-cratering"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=859&amp;/invertebrate-paleontology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=868&amp;/isostasy"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=891&amp;/lahars"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=895&amp;/land-subsidence"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=908&amp;/landslides"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=935&amp;/limnology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=938&amp;/liquefaction"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=966&amp;/magnetic-storms"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=995&amp;/marine-chemistry"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=998&amp;/marine-geology"/>
+  </Declaration>
+  <Declaration>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=999&amp;/marine-geophysics"/>
+  </Declaration>
+  <Declaration>
+    <ObjectProperty IRI="#related-to"/>
+  </Declaration>
+  <Declaration>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+  </Declaration>
+  <EquivalentClasses>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=456&amp;/earthquakes"/>
+    <ObjectSomeValuesFrom>
+      <ObjectProperty IRI="#related-to"/>
+      <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+    </ObjectSomeValuesFrom>
+  </EquivalentClasses>
+  <EquivalentClasses>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=938&amp;/liquefaction"/>
+    <ObjectSomeValuesFrom>
+      <ObjectProperty IRI="#related-to"/>
+      <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=456&amp;/earthquakes"/>
+    </ObjectSomeValuesFrom>
+  </EquivalentClasses>
+  <SubClassOf>
+    <Class IRI="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#absorption"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1559&amp;/sorption"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#adsorption"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1559&amp;/sorption"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#knowledge-areas"/>
+    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000141"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="#natural-processes"/>
+    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+    <Class IRI="#knowledge-areas"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1005&amp;/mass-wasting"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=101&amp;/atmospheric-circulation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1027&amp;/metamorphism-geological"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=103&amp;/atmospheric-deposition-chemical-particulate"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1031&amp;/meteorology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=106&amp;/atmospheric-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1042&amp;/micropaleontology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1047&amp;/migration-organisms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1052&amp;/mineralogy"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=106&amp;/atmospheric-sciences"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1104&amp;/neotectonic-processes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1139&amp;/nutrient-cycling"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=157&amp;/biogeochemical-cycling"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1150&amp;/ocean-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1152&amp;/ocean-sciences"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1158&amp;/ocean-atmosphere-interaction"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1182&amp;/ore-formation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1201&amp;/oxidation-and-reduction"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1210&amp;/paleobotany"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1215&amp;/paleogeography"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=649&amp;/geography"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1218&amp;/paleoseismology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1510&amp;/seismology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1252&amp;/petrology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=12539&amp;/alluvial-sedimentation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1491&amp;/sedimentation"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1267&amp;/physiological-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=12783&amp;/el-nino"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1158&amp;/ocean-atmosphere-interaction"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1297&amp;/pollination"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13013&amp;/la-nina"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1158&amp;/ocean-atmosphere-interaction"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13253&amp;/rain"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=13366&amp;/snow"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1374&amp;/reaction-transport"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1491&amp;/sedimentation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1492&amp;/sedimentology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=150&amp;/bioaccumulation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1510&amp;/seismology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=154&amp;/biodegradation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1549&amp;/soil-chemistry"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=639&amp;/geochemistry"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1551&amp;/soil-formation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1556&amp;/soil-sciences"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1559&amp;/sorption"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=157&amp;/biogeochemical-cycling"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1591&amp;/stratigraphy"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1611&amp;/structural-geology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1617&amp;/succession-biological"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1653&amp;/tectonophysics"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1700&amp;/tornadoes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=171&amp;/biological-productivity"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1711&amp;/transpiration"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1821&amp;/vertebrate-paleontology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1835&amp;/volcanic-activity"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1838&amp;/volcanic-gas-emission"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1835&amp;/volcanic-activity"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1843&amp;/volcanology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1857&amp;/water-chemistry"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=639&amp;/geochemistry"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1888&amp;/wetland-functions"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=468&amp;/ecosystem-functions"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=189&amp;/blizzards"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1896&amp;/wind"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=229&amp;/carbon-cycling"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=157&amp;/biogeochemical-cycling"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=232&amp;/carbon-sequestration"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=237&amp;/cartography"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=649&amp;/geography"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change"/>
+    <ObjectSomeValuesFrom>
+      <ObjectProperty IRI="#related-to"/>
+      <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology"/>
+    </ObjectSomeValuesFrom>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=106&amp;/atmospheric-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=315&amp;/contaminant-transport"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=379&amp;/deformation-geologic"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=387&amp;/desertification"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=391&amp;/diagenesis"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=405&amp;/dispersal-organisms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=42&amp;/algal-blooms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=428&amp;/droughts"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=432&amp;/dust-storms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/http://www.vocabularyserver.com/usgs/index.php?tema=1458/sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=444&amp;/earth-tides"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=456&amp;/earthquakes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=461&amp;/ecological-competition"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=465&amp;/economic-geology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=468&amp;/ecosystem-functions"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=516&amp;/erosion"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=526&amp;/eutrophication"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=527&amp;/evaporation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=535&amp;/extinction-and-extirpation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=562&amp;/fire-damage"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=739&amp;/habitat-alteration"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=591&amp;/folding-geologic"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=379&amp;/deformation-geologic"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=605&amp;/fracture-geologic"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=379&amp;/deformation-geologic"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=639&amp;/geochemistry"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=640&amp;/geochronology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=642&amp;/geodesy"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=649&amp;/geography"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=686&amp;/glaciation"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=688&amp;/glaciology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=103&amp;/atmospheric-deposition-chemical-particulate"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=712&amp;/greenhouse-effect"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=739&amp;/habitat-alteration"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=757&amp;/heat-flow-earth"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=783&amp;/hurricanes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=788&amp;/hydrodynamics"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=797&amp;/hydrology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=796&amp;/hydrologic-processes"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=797&amp;/hydrology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=800&amp;/hydrothermal-processes"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=809&amp;/ice-storms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=818&amp;/impact-cratering"/>
+    <Class IRI="#natural-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=859&amp;/invertebrate-paleontology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=868&amp;/isostasy"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=891&amp;/lahars"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=908&amp;/landslides"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=895&amp;/land-subsidence"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=908&amp;/landslides"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1005&amp;/mass-wasting"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=935&amp;/limnology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=938&amp;/liquefaction"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=966&amp;/magnetic-storms"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=995&amp;/marine-chemistry"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=1857&amp;/water-chemistry"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=998&amp;/marine-geology"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology"/>
+  </SubClassOf>
+  <SubClassOf>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=999&amp;/marine-geophysics"/>
+    <Class IRI="http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics"/>
+  </SubClassOf>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=100&amp;/atmospheric-and-climatic-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phenomena affecting or occurring within the mass of gases that surrounds the earth, including its physics, chemistry, dynamics, and weather conditions.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1005&amp;/mass-wasting</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The down slope movement of earth material under the influence of gravity.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=101&amp;/atmospheric-circulation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Movement of atmospheric gases around the earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1027&amp;/metamorphism-geological</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metamorphism</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1027&amp;/metamorphism-geological</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">metamorphosis</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1027&amp;/metamorphism-geological</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Process by which rocks are altered in composition and texture by extreme heat, high pressure, or the action of chemicals.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=103&amp;/atmospheric-deposition-chemical-particulate</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The transfer of substances from the air to the surface of the earth, either in wet form (rain, fog, snow, dew, frost, hail) or in dry form (gases, aerosols, particles).</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1031&amp;/meteorology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of science dealing with the short-term variations of atmospheric conditions including wind, precipitation, temperature, humidity, cloud cover, and air pressure.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1042&amp;/micropaleontology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of paleontology dealing with microscopic fossils.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1047&amp;/migration-organisms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The movement of animals, often periodical, from one area to another due to seasonal changes, availability of food, or climatic conditions.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1052&amp;/mineralogy</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth sciences concerned with the study of naturally occurring inorganic elements or compounds.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=106&amp;/atmospheric-sciences</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Studies relating to composition, structure, physics, chemistry, and dynamics of the atmosphere</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1104&amp;/neotectonic-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Changes which took place during geological time after the Miocene era and are associated with the structural forces that affect the deformation, uplift, and movement occurring in the earth's crust.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1139&amp;/nutrient-cycling</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The exchange of elements or compounds essential for the nourishment of organisms in an ecosystem.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1152&amp;/ocean-sciences</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13151&amp;/oceanography</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1152&amp;/ocean-sciences</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13198&amp;/physical-oceanography</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1152&amp;/ocean-sciences</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sciences involved in the study of geological, biological, chemical, and physical characteristics and processes of the oceans.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1158&amp;/ocean-atmosphere-interaction</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processes, including momentum, heat, gas and other exchanges, which result in profound effects on climate and interactions between the air in the lowest part of the atmosphere and the oceans.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1182&amp;/ore-formation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geochemical processes resulting in concentration of useful chemical elements and compounds, in earth materials. Typically refers to metal ores.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1201&amp;/oxidation-and-reduction</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Addition or reduction of oxygen in a compound accompanied by exchange of electrons among atoms.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1210&amp;/paleobotany</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of paleontology concerned with the study of fossil plants and plant life in the geologic past.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1215&amp;/paleogeography</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of the history of earth surface characteristics; geomorphology in the past.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1217&amp;/paleontology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of life in past geologic time based on fossil plants and animals.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1218&amp;/paleoseismology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of seismology concerned with ancient earthquakes. Clues which indicate seismic activities in the geologic past are used to date and determine the effects of those earthquakes.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1252&amp;/petrology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth sciences concerned with the origin, structure, alteration, and composition of rocks.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12539&amp;/alluvial-sedimentation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sedimentaion of alluvial soil</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1267&amp;/physiological-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Characteristics and processes of individual organisms that are not the direct result of their interaction with other organisms or with the environment.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1297&amp;/pollination</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wind, bees, or other agents transfer plant pollen from flower anthers or cones to stigmas, thereby fertilizing plants for reproduction.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">atmospheric precipitation</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1319&amp;/precipitation-atmospheric</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any or all forms of water particles that fall from the atmosphere, such as rain, snow, hail and sleet.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13253&amp;/rain</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.vocabularyserver.com/usgs/index.php?tema=13254&amp;/rainfall</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13366&amp;/snow</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13367&amp;/snowfall</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1374&amp;/reaction-transport</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chemical reactions occurring during ground-water flow.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12540&amp;/alluvial-transport</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12584&amp;/bed-load</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12585&amp;/bedload</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12730&amp;/density-flow</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13417&amp;/suspended-load</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13472&amp;/turbidity-flow</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1489&amp;/sediment-transport</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Transport of solid particles of unconsolidated rock and mineral fragments, chemical precipitates, or biological materials.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1492&amp;/sedimentology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth sciences concerned with the study of the origin, composition, transport, and changes of materials deposited by water, wind, or ice.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=150&amp;/bioaccumulation</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The biological sequestering of a substance at a higher concentration than that at which it occurs in the surrounding environment or medium. Also, the process whereby a substance enters an organism through the gills, epithelial tissues, dietary, or other sources.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1510&amp;/seismology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth sciences concerned with the study of earthquakes and man-induced seismic waves.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=154&amp;/biodegradation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reduction in the concentration of harmful chemicals by the action of animals and plants.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1551&amp;/soil-formation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Geological, geochemical, and ecological processes that work together to produce soils.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1556&amp;/soil-sciences</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Earth sciences dealing with the origin, classification, physical, chemical, and biological properties of soils.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1559&amp;/sorption</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Attachment of chemical substances to materials, either externally (by adsorption) or internally (by absorption).</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=157&amp;/biogeochemical-cycling</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The cycling of chemical constituents through a biological system.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1587&amp;/storms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Atmospheric disturbances with winds of unusual force or direction. Accompanied by rain, snow, hail, or sleet, and often by thunder and lightning.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1591&amp;/stratigraphy</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of geology concerned with the study of the formation, composition, ordering in time, and arrangement in space of stratified rocks.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1611&amp;/structural-geology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of geology concerned with the distribution, position, shape, and internal structure of rocks</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1617&amp;/succession-biological</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gradual replacement of one species in an area by another.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1651&amp;/tectonic-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The structural forces affecting the deformation, uplift, and movement of the earth's crust.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1653&amp;/tectonophysics</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of geophysics concerned with the structural forces affecting the deformation, uplift, and movement of the earth's crust.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1700&amp;/tornadoes</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Violent storms characterized by whirling funnels of wind moving at great speeds.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=171&amp;/biological-productivity</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The rate at which primary producers in the ecosystem utilize solar energy to produce food for consumption by other organisms. Do not use this term for "productivity" of organisms related to studies of the reproduction rates of a species.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1711&amp;/transpiration</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evaporation of water from plants.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1821&amp;/vertebrate-paleontology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of paleontology dealing with fossil animals that have spinal columns.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1835&amp;/volcanic-activity</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Episodes during which gases, ash, and lava (molten rock) escape from vents in the earth's crust, accompanied by minor tremors.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1838&amp;/volcanic-gas-emission</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emission of gases from fumaroles and volcanoes.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1843&amp;/volcanology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The branch of geology that deals with volcanism and the processes involved in magma flow and eruption through a vent in the earth's surface.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1857&amp;/water-chemistry</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of chemistry that deals with the elements and compounds in water.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1888&amp;/wetland-functions</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processes related to wetlands such as support of ecosystems, evaporation effects on weather, nutrient cycles, etc.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=189&amp;/blizzards</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Severe snowstorms with intense winds.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=1896&amp;/wind</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Local air movements.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=229&amp;/carbon-cycling</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The circulation of carbon in the biosphere, atmosphere, and hydrosphere through a series of processes that include photosynthesis, consumption, and respiration.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=232&amp;/carbon-sequestration</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Long-term storage of carbon in soils and terrestrial organic material, typically of importance in understanding the balance of CO2 in the global climate system.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=237&amp;/cartography</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12736&amp;/digital-cartography</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=237&amp;/cartography</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The science and art of making maps.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12656&amp;/climate-history</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12657&amp;/climate-variability</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12658&amp;/climatic-change</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12902&amp;/global-climate-change</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=13175&amp;/paleoclimate</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=272&amp;/climate-change</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Long-term alteration in the characteristic weather conditions of a region, such as changes in precipitation and temperature.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=276&amp;/climatology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scientific study of the characteristic weather conditions of geographic areas.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=315&amp;/contaminant-transport</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processes involved in the movement of impurities through air, water, and soil.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=379&amp;/deformation-geologic</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Change in form and structure of geologic materials in response to stress, typically heat and pressure.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=387&amp;/desertification</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The alteration of arable land to dry, barren land due to prolonged drought or the deleterious effects of human intervention including overgrazing, overpopulation, or destructive agricultural practices.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=391&amp;/diagenesis</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chemical, physical, and biological changes in sediment during and after its conversion to rock (lithification).</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=405&amp;/dispersal-organisms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">dispersal of organisms</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=405&amp;/dispersal-organisms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The dissemination or geographic spread of individuals of a plant or animal population.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=42&amp;/algal-blooms</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Exceptional growth of algae and cyanobacteria in lakes, rivers or oceans due to excessive nutrients or climatic conditions.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=428&amp;/droughts</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extended periods of moisture deficit over a sizeable area sufficient to have an adverse effect on vegetation, animals, or man.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=432&amp;/dust-storms</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Atmospheric disturbances in which a significant amount of dust is transported.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=442&amp;/earth-sciences</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Broad term for all science related to the study of the earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=444&amp;/earth-tides</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Periodic changes in the earth surface topography caused by the gravitational attraction of the moon and sun, measured with tiltmeters. Used in studies of volcanic activity.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=456&amp;/earthquakes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ground shaking caused by the sudden release of accumulated strain by an abrupt shift of rock along a fracture in the earth or by volcanic or magmatic activity, or other sudden stress changes in the earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=461&amp;/ecological-competition</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The struggle between members of two or more species for scarce environmental resources.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=463&amp;/ecological-processes</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dynamic biogeochemical interactions that occur among and between biotic and abiotic components of the biosphere.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=465&amp;/economic-geology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scientific study of the formation, location, and use of marketable geologic materials including fuels, metals, minerals, and water.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=468&amp;/ecosystem-functions</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The total life activities of organisms in habitats and the effects of those activities on the nonliving components of the environment.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=516&amp;/erosion</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process whereby materials of the earth's crust are loosened, dissolved, or worn away and simultaneously moved from one place to another.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=526&amp;/eutrophication</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process by which water becomes enriched with plant nutrients, most commonly phosphorus and nitrogen.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=527&amp;/evaporation</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12809&amp;/evapotranspiration</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=527&amp;/evaporation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Transfer of water from a surface into the atmosphere.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=535&amp;/extinction-and-extirpation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Extinction is the complete disappearance of a species from the earth. Extirpation is the complete disappearance (elimination) of a species from a given region, island, or area.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=562&amp;/fire-damage</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Destruction of surficial materials and vegetation by burning.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=591&amp;/folding-geologic</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">folding</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=591&amp;/folding-geologic</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A property of geologic structures to bend or curve from the planar layers.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=605&amp;/fracture-geologic</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fracture</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=605&amp;/fracture-geologic</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Break in a geologic structure including cracks, joints, and faults.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=637&amp;/geochemical-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processes affecting the amount, distribution, or structure of chemical elements in air, water, soil, rocks, and minerals.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=639&amp;/geochemistry</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.vocabularyserver.com/usgs/index.php?tema=12645&amp;/chemistry-earth-sciences</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=640&amp;/geochronology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of the age of the earth by dating geological formations, rocks, and fossils.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=642&amp;/geodesy</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of science dealing with measuring the earth or large areas of the earth for making maps, determining the size and shape of the earth, and correlating gravitational, geological, and magnetic surveys of the earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=649&amp;/geography</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of the earth's landforms, topography, and climate, the distribution of flora and fauna, and the distribution, culture, and activities of human populations.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=659&amp;/geologic-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">All types of processes involving geological structures.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=666&amp;/geology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of the planet earth, its composition, structure, physical and chemical processes, and history since its origin.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=673&amp;/geophysics</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of geology studying the physical characteristics and phenomena of the earth and its atmosphere.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=686&amp;/glaciation</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The geologic processes involved in the formation, movement, changes, and effects of large ice masses (glaciers).</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=688&amp;/glaciology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Science dealing with the features, origins, processes, and properties of snow, ice, glaciers, and ice sheets.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12516&amp;/acid-precipitation</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12517&amp;/acid-rain</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12518&amp;/acid-snow</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=7&amp;/acid-deposition</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process by which emissions, chiefly sulfur and nitrogen compounds, either react with the atmosphere when deposited on earth by precipitation of snow, rain, or fog with a pH of 5.5 or below, or settle out as acidic particles or gases.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=712&amp;/greenhouse-effect</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Local, regional, or global warming in the atmosphere due to the higher heat capacity of certain gases such as carbon dioxide, methane, and ozone.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=739&amp;/habitat-alteration</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Natural or human-related changes in the environments where plants and animals live.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=757&amp;/heat-flow-earth</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">heat flow</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=757&amp;/heat-flow-earth</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Energy transferred by a difference in temperature through the surface of the earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=783&amp;/hurricanes</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Severe cyclones, or revolving storms, originating over the equatorial regions of the earth, accompanied by torrential rain, lightning, and winds with a speed greater than 74 miles per hour.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=788&amp;/hydrodynamics</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Principles of fluid dynamics applied to water bodies.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12879&amp;/geohydrology</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12928&amp;/groundwater-geology</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12961&amp;/hydrographic-sections</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=791&amp;/hydrogeology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Study of subsurface waters and geologic aspects of surface waters.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=797&amp;/hydrology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth science that deals with water as it occurs in the atmosphere, on the surface of the ground, and underground.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=800&amp;/hydrothermal-processes</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Natural phenomena relating to heated water generated by igneous activity.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=809&amp;/ice-storms</IRI>
+    <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Storms in which falling snow or rain freezes on contact with surfaces on the ground.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=818&amp;/impact-cratering</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Impact of extraterrestrial objects such as asteroids, comets, and meteorites on Earth.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=859&amp;/invertebrate-paleontology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of paleontology which deals with fossil animals without backbones.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=868&amp;/isostasy</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Condition of equilibrium or buoyancy of the earth's crust above the mantle.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=891&amp;/lahars</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Downslope flow of ash and rock debris resulting from volcanic activity.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=895&amp;/land-subsidence</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Settling, compaction, or caving in of land caused by subsurface mining, ground-water withdrawal, or pumping of oil and gas.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=908&amp;/landslides</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Downslope movement of rock, soil, or artificial fill under the influences of gravity.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=935&amp;/limnology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scientific study of the physical and biological characteristics of inland bodies of water such as lakes and ponds.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=938&amp;/liquefaction</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical process which can occur during an earthquake. Clay-free soil deposits (primarily sands and silts)temporarily lose strength and behave as viscuous fluids, resulting in ground failure.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=966&amp;/magnetic-storms</IRI>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=12889&amp;/geomagnetic-storms</IRI>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="obo2:Synonym"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=966&amp;/magnetic-storms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">magnetic storm</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=966&amp;/magnetic-storms</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A period of time during which the earth's magnetic field varies rapidly. During magnetic storms, satellite electronics can be damaged through the build up and subsequent discharge of static electric charges and astronauts and high-altitude pilots can be subjected to increased levels of radiation.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=995&amp;/marine-chemistry</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of chemistry that deals with the properties, composition, structure, and interaction of substances in the seas and oceans.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=998&amp;/marine-geology</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of geology concerned with the composition, geologic history, and earth processes of the ocean floor and the continental margin.</Literal>
+  </AnnotationAssertion>
+  <AnnotationAssertion>
+    <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    <IRI>http://www.vocabularyserver.com/usgs/index.php?tema=999&amp;/marine-geophysics</IRI>
+    <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Branch of earth sciences concerned with the physical processes of the oceans and continental margins.</Literal>
+  </AnnotationAssertion>
+</Ontology>
